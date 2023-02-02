@@ -7,7 +7,6 @@ import Checkbox from 'components/forms/checkbox';
 import Input from 'components/forms/input';
 import Label from 'components/forms/label';
 import Radio from 'components/forms/radio';
-import Select from 'components/forms/select';
 import Slider from 'components/forms/slider';
 import Textarea from 'components/forms/textarea';
 import { composeValidators, booleanValidator, arrayValidator } from 'components/forms/validations';
@@ -70,32 +69,6 @@ export function Form(): ReactNode {
                     Description
                   </Label>
                   <Textarea id="form-description" {...flprops} rows={4} />
-                </>
-              )}
-            </FieldRFF>
-          </div>
-
-          {/* SELECT */}
-          <div className="mt-5">
-            <FieldRFF name="category" validate={composeValidators([{ presence: true }])}>
-              {(flprops) => (
-                <>
-                  <Label htmlFor="form-select" className="mb-3 uppercase">
-                    Category
-                  </Label>
-                  <Select
-                    {...flprops.input}
-                    id="form-select"
-                    theme="dark"
-                    size="base"
-                    meta={flprops.meta}
-                    options={[
-                      { label: 'Option 1', value: 'option-1' },
-                      { label: 'Option 2', value: 'option-2' },
-                      { label: 'Option 3', value: 'option-3', disabled: true },
-                      { label: 'Option 4', value: 'option-4' },
-                    ]}
-                  />
                 </>
               )}
             </FieldRFF>
