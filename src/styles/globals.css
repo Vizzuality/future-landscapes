@@ -19,6 +19,11 @@
   }
 }
 
+@font-face {
+  font-family: "baskerville";
+  src: url("../../public/fonts/baskerville.ttc");
+}
+
 @layer utilities {
   /* We want a blur effect without having a high opacity background, but we still want the
   background to be visible for the browsers that don't support backdrop-filter, so we double the
@@ -26,6 +31,7 @@
   .bg-blur {
     @apply bg-opacity-40;
   }
+  /* muktiple bg image */
 
   @supports (backdrop-filter: blur(4px)) {
     .bg-blur {

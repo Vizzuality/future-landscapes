@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { MapProvider } from 'react-map-gl';
 import { Provider as ReduxProvider } from 'react-redux';
 
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+
+import { GAPage } from 'lib/analytics/ga';
 
 import { OverlayProvider } from '@react-aria/overlays';
 import { QueryClient, QueryClientProvider, Hydrate } from '@tanstack/react-query';
@@ -13,7 +14,7 @@ import { SessionProvider } from 'next-auth/react';
 import ThirdParty from 'containers/third-party';
 
 import { MediaContextProvider } from 'components/media-query';
-import { GAPage } from 'lib/analytics/ga';
+import Layout from 'layouts/component';
 import store from 'store';
 
 import 'styles/globals.css';
@@ -49,10 +50,10 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
             <OverlayProvider>
               {/* @ts-ignore: https://github.com/artsy/fresnel/issues/281 */}
               <MediaContextProvider>
-                <MapProvider>
+                <Layout>
                   <ThirdParty />
                   <Component {...pageProps} />
-                </MapProvider>
+                </Layout>
               </MediaContextProvider>
             </OverlayProvider>
           </SessionProvider>

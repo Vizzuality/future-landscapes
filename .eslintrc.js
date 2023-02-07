@@ -90,6 +90,11 @@ module.exports = {
             group: 'builtin',
           },
           {
+            pattern: 'lib/**',
+            group: 'external',
+            position: 'before',
+          },
+          {
             pattern: 'hoc/**',
             group: 'external',
             position: 'before',
