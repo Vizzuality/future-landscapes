@@ -2,11 +2,6 @@ import React from 'react';
 
 import { useModal } from 'hooks/modals';
 
-// import Image from 'next/image';
-// import Link from 'next/link';
-
-// import Wrapper from 'containers/wrapper';
-
 import Icon from 'components/icon';
 import Modal from 'components/modal';
 

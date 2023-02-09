@@ -31,7 +31,14 @@
   .bg-blur {
     @apply bg-opacity-40;
   }
-  /* muktiple bg image */
+  /* multiple bg image pattern */
+  .bg-multiple-img {
+    background-image: url('/images/background/pattern-top.png'), url('/images/background/pattern-bottom.png');
+    background-size: 40%, 40%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: left top, right bottom;
+  }
 
   @supports (backdrop-filter: blur(4px)) {
     .bg-blur {
