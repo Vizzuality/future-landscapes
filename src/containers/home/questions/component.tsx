@@ -22,7 +22,7 @@ const INITIAL_VALUES = {
 const Questions = () => {
   const [step, setStep] = useAtom(readWriteStepAtom);
 
-  const { bgColor } = COLORS.find((c) => c.id === step);
+  const { bgColor } = step !== 0 && COLORS.find((c) => c.id === step);
 
   const handleSubmit = useCallback(
     (values) => {

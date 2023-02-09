@@ -1,7 +1,7 @@
 import { atom } from 'jotai';
 
 // Atom to save the step
-export const stepAtom = atom<number>(1);
+export const stepAtom = atom<number>(0);
 
 export const readWriteStepAtom = atom(
   (get) => get(stepAtom),
