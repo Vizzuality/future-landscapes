@@ -4,7 +4,7 @@ import HEART_SVG from 'svgs/ui/heart.svg?sprite';
 
 const AboutContent = () => {
   return (
-    <div className="flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
+    <div className="flex flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
       <h1 className="px-10 text-xl font-medium">We&apos;re Vizz</h1>
       <div className="grow space-y-5 px-10">
         <p>

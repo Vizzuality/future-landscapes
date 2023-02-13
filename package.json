@@ -12,7 +12,8 @@
     "storybook:dev": "start-storybook -p 6006 -c .storybook",
     "storybook:build": "build-storybook -c .storybook",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "postinstall": "husky install"
   },
   "engines": {
     "node": "~18 || ~16"
@@ -24,7 +25,6 @@
     "@dnd-kit/sortable": "7.0.1",
     "@dnd-kit/utilities": "3.2.0",
     "@egjs/react-flicking": "4.9.4",
-    "@evilmartians/lefthook": "1.2.9",
     "@floating-ui/react-dom-interactions": "0.6.1",
     "@headlessui/react": "1.7.4",
     "@luma.gl/constants": "8.4.5",
@@ -89,6 +89,7 @@
     "eslint-config-next": "13.1.2",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
+    "husky": "^8.0.3",
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "0.2.1",
     "start-server-and-test": "1.12.1",
@@ -100,6 +101,9 @@
   },
   "resolutions": {
     "webpack": "^5"
+  },
+  "husky": {
+    "pre-commit": "yarn lint"
   },
   "packageManager": "yarn@3.3.1"
 }
