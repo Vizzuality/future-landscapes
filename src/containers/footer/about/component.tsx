@@ -9,7 +9,7 @@ const AboutContent = () => {
       <div className="grow space-y-5 px-10">
         <p>
           We dedicate our work towards a better future for our planet and society. But what does
-          that look like?
+          that look like??
         </p>
         <p>
           Everyone&apos;s vision of sustainability looks different. We want to honour that. Through

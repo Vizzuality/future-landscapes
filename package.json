@@ -101,8 +101,5 @@
   "resolutions": {
     "webpack": "^5"
   },
-  "husky": {
-    "pre-commit": "yarn lint"
-  },
   "packageManager": "yarn@3.3.1"
 }
