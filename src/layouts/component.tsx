@@ -1,17 +1,16 @@
-// import Footer from 'containers/footer';
 import { Inter } from '@next/font/google';
 
-// import Header from 'containers/header';
+import Footer from 'containers/footer';
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 const inter = Inter({
-  weight: ['300', '400', '600', '700'],
+  weight: ['300', '400', '600', '700', '900'],
   style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-public-sans',
+  variable: '--font-inter',
   display: 'block',
 });
 
@@ -19,16 +18,13 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
   const { children } = props;
 
   return (
-    <main className={`${inter.variable} flex flex-col font-sans antialiased lg:min-h-screen`}>
-      {/* <Header /> */}
-
-      <div className="relative grow">
+    <div className={`${inter.variable} flex h-screen flex-col font-sans`}>
+      <main className="grow">
         {/* Content */}
         {children}
-      </div>
-
-      {/* <Footer /> */}
-    </main>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

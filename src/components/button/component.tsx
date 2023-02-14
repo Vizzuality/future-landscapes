@@ -12,7 +12,7 @@ const hasHref = (props: ButtonProps | AnchorProps): props is AnchorProps => 'hre
 
 function buildClassName({ className, disabled, size, theme }) {
   return cx({
-    'flex items-center justify-center rounded-3xl': true,
+    'flex items-center justify-center rounded-2xl': true,
     [THEME[theme]]: true,
     [SIZE[size]]: true,
     [className]: !!className,
@@ -30,18 +30,18 @@ export const LinkAnchor: FC<AnchorProps> = ({
   anchorLinkProps,
   ...restProps
 }: AnchorProps) => (
-  <Link href={href} {...anchorLinkProps}>
-    <a
-      className={buildClassName({
-        className,
-        disabled,
-        size,
-        theme,
-      })}
-      {...restProps}
-    >
-      {children}
-    </a>
+  <Link
+    href={href}
+    {...anchorLinkProps}
+    className={buildClassName({
+      className,
+      disabled,
+      size,
+      theme,
+    })}
+    {...restProps}
+  >
+    {children}
   </Link>
 );
 
