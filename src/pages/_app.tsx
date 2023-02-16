@@ -21,11 +21,31 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   // between users
   const [queryClient] = useState(() => new QueryClient());
 
+  const { asPath } = router;
+
+  const handleRouteChangeStart = useCallback(
+    (path) => {
+      const prevPath = asPath.split('?')[0];
+      const nextPath = path.split('?')[0];
+
+      // Prevent the route loading indicator from flashing when navigating to the same page.
+      if (prevPath === nextPath) return;
+
+      // setRouteLoading((prevState) => ({
+      //   ...prevState,
+      //   loading: true,
+      //   key: prevState.key + 1,
+      // }));
+    },
+    [asPath]
+  );
+
   const handleRouteChangeCompleted = useCallback((url: string) => {
     GAPage(url);
   }, []);
 
   useEffect(() => {
+    router.events.on('routeChangeStart', handleRouteChangeStart);
     router.events.on('routeChangeComplete', handleRouteChangeCompleted);
 
     return () => {

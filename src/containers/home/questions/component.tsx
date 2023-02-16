@@ -12,6 +12,8 @@ import Background from 'containers/background';
 
 import Carousel from 'components/carousel';
 
+import { SOLUTIONS } from '../solution/constants';
+
 import { COLORS, QUESTIONS } from './constants';
 import CristalBall from './cristal-ball';
 import Question from './question';
@@ -22,24 +24,6 @@ const INITIAL_VALUES = {
   c: undefined,
   d: undefined,
 };
-
-const SOLUTIONS = [
-  {
-    id: '0000',
-    name: 'lalala',
-    slug: 'nature-rulebook',
-  },
-  {
-    id: '0001',
-    name: 'lalala',
-    slug: 'systems-atlas',
-  },
-  {
-    id: '0002',
-    name: 'Corridors of Life',
-    slug: 'corridors-of-life',
-  },
-];
 
 const Questions = () => {
   const { push } = useRouter();
@@ -52,7 +36,9 @@ const Questions = () => {
       const { a, b, c, d } = values;
       const S = SOLUTIONS.find((s) => s.id === `${a}${b}${c}${d}`);
 
-      push(`/solutions/${S.slug}`);
+      push({
+        pathname: `/solution/${S.slug}`,
+      });
     }, 2000);
   }, []);
 
@@ -74,8 +60,6 @@ const Questions = () => {
 
     return [...qs, loader];
   }, []);
-
-  console.log({ FORMATED_QUESTIONS });
 
   return (
     <FormRFF onSubmit={handleSubmit} initialValues={INITIAL_VALUES}>
