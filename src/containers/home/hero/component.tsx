@@ -3,7 +3,8 @@ import { readWriteStepAtom } from 'store/step';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAtom } from 'jotai';
 
-import Background from 'components/background';
+import Background from 'containers/background';
+
 import Button from 'components/button';
 
 const Hero = () => {
@@ -26,7 +27,7 @@ const Hero = () => {
             opacity: 0,
             y: '100%',
             transition: {
-              delay: 0,
+              delay: 0.3,
             },
           }}
         >

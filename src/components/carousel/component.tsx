@@ -10,7 +10,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   autoplay,
   options = {
     duration: 500,
-    circular: true,
+    circular: false,
     bound: false,
   },
   ...rest
