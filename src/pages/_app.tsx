@@ -30,12 +30,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
 
       // Prevent the route loading indicator from flashing when navigating to the same page.
       if (prevPath === nextPath) return;
-
-      // setRouteLoading((prevState) => ({
-      //   ...prevState,
-      //   loading: true,
-      //   key: prevState.key + 1,
-      // }));
     },
     [asPath]
   );

@@ -37,9 +37,9 @@ const Questions = () => {
       const S = SOLUTIONS.find((s) => s.id === `${a}${b}${c}${d}`);
 
       push({
-        pathname: `/solution/${S.slug}`,
+        pathname: `/solutions/${S.slug}`,
       });
-    }, 2000);
+    }, 10000);
   }, []);
 
   const FORMATED_QUESTIONS = useMemo(() => {
@@ -66,7 +66,6 @@ const Questions = () => {
       {(fprops) => (
         <Background color={bgColor} step={step}>
           <form onSubmit={fprops.handleSubmit} autoComplete="off">
-            {/* Questions */}
             <Carousel
               slide={step - 1}
               slides={FORMATED_QUESTIONS}

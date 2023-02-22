@@ -1,11 +1,15 @@
 import Icon from 'components/icon';
 
 import HEART_SVG from 'svgs/ui/heart.svg?sprite';
+import VIZZ_SVG from 'svgs/ui/vizzuality.svg?sprite';
 
 const AboutContent = () => {
   return (
-    <div className="flex flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
-      <h1 className="px-10 text-xl font-medium">We&apos;re Vizz</h1>
+    <div className="flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
+      <div className="flex items-end justify-center space-x-2">
+        <h1 className="text-xl font-medium">We&apos;re</h1>
+        <Icon icon={VIZZ_SVG} className="h-7 w-20 text-white" />
+      </div>
       <div className="grow space-y-5 px-10">
         <p>
           We dedicate our work towards a better future for our planet and society. But what does
@@ -20,7 +24,7 @@ const AboutContent = () => {
         </p>
         <p>We hope you enjoy it.</p>
       </div>
-      <Icon icon={HEART_SVG} className="h-12 w-12 text-white" />
+      <Icon icon={HEART_SVG} className="h-8 w-8 text-white" />
     </div>
   );
 };

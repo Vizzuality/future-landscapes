@@ -17,19 +17,6 @@ import VIZZ_SVG from 'svgs/ui/vizzuality.svg?sprite';
 const Questions = () => {
   const [step, setStep] = useAtom(readWriteStepAtom);
 
-  // const form = useForm();
-  // const { values } = form.getState();
-
-  // const handleClick = useCallback(
-  //   (id, name) => {
-  //     console.log({ values });
-  //     const isAnswered = values.find((v) => v.name === name);
-  //     console.log({ isAnswered });
-  //     setStep(id);
-  //   },
-  //   [setStep]
-  // );
-
   return (
     <>
       <div className="text-black">
@@ -38,7 +25,7 @@ const Questions = () => {
         </a>
       </div>
 
-      <div className="relative flex space-x-3">
+      <div className="relative flex grow space-x-3">
         <LayoutGroup>
           {QUESTIONS.map((q) => {
             return (

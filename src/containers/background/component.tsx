@@ -1,5 +1,3 @@
-import classNames from 'classnames';
-
 import RiveComponent from 'components/rive-component';
 import cn from 'lib/classnames';
 
@@ -10,25 +8,25 @@ const STARS_0 = [
     id: 1,
     src: `/images/background/star1.riv`,
     autoplay: true,
-    className: 'absolute top-32 right-40 h-5 w-5',
+    className: 'absolute top-32 right-40 lg:top-52 lg:right-64 h-5 w-5 lg:h-6 lg:w-6',
   },
   {
     id: 2,
     src: `/images/background/star2.riv`,
     autoplay: true,
-    className: 'absolute top-20 left-8 h-14 w-16',
+    className: 'absolute top-20 left-8 lg:top-40 lg:left-72 h-14 w-14 lg:h-16',
   },
   {
     id: 3,
     src: `/images/background/star1.riv`,
     autoplay: true,
-    className: 'absolute top-12 left-36 h-10 w-10',
+    className: 'absolute top-12 left-36 lg:top-32 lg:left-2/3 h-10 w-10 lg:h-14',
   },
   {
     id: 4,
     src: `/images/background/star1.riv`,
     autoplay: true,
-    className: 'absolute bottom-16 right-10 h-10 w-10',
+    className: 'absolute bottom-24 right-24 lg:bottom-44 lg:right-1/3 h-6 w-6',
   },
 ];
 
@@ -55,8 +53,9 @@ export const Background: React.FC<BackgroundProps> = ({
   return (
     <div
       className={cn({
-        'lg:bg-multiple-img h-full w-full overflow-hidden transition-colors': true,
+        'h-full w-full overflow-hidden transition-colors': true,
         [color]: color,
+        'lg:bg-multiple-img': step !== 0,
       })}
     >
       {step === 0 &&

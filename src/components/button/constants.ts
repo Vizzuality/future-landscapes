@@ -17,5 +17,5 @@ export const SIZE = {
   s: 'text-sm px-3 py-0.5',
   base: 'text-sm px-8 py-2',
   l: 'text-base px-8 py-3',
-  xl: 'text-base px-36 py-3',
+  xl: 'text-base px-36 py-5',
 };

@@ -1,4 +1,4 @@
-import { forwardRef, useEffect } from 'react';
+import { forwardRef, useCallback, useMemo } from 'react';
 
 import { FormSpy, useForm } from 'react-final-form';
 
@@ -6,6 +6,8 @@ import { readWriteStepAtom } from 'store/step';
 
 import { useRive } from '@rive-app/react-canvas';
 import { useAtom } from 'jotai';
+
+import { useAnimatedCounter } from 'hooks/animated-counter';
 
 import Background from 'containers/background';
 
@@ -17,12 +19,16 @@ const CristalBall = forwardRef<HTMLDivElement>((_, ref) => {
     autoplay: true,
   });
 
+  const count = useAnimatedCounter(0, 100, 10, (v) => `${v.toFixed(0)}%`);
+  // console.log('count', step === 5 && count);
+  // console.log({ step });
+
   return (
     <>
       <FormSpy
         subscription={{ valid: true, dirty: true }}
         onChange={(props) => {
-          if (props.valid && props.dirty) {
+          if (props.valid && props.dirty && count === '100%') {
             form.submit();
           }
         }}
@@ -37,7 +43,7 @@ const CristalBall = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
 
           <p className="text-white">Creating your Future Landscape</p>
-          <p>(68%)</p>
+          <p>{step === 5 && count}</p>
         </div>
       </div>
     </>

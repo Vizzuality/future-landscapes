@@ -30,7 +30,7 @@ const Hero = () => {
         open={isModalOpen}
         onOpenChange={closeModal}
         dismissable
-        className="bg-black text-white"
+        className="h-2/3 rounded-t-3xl bg-black text-white"
       >
         <AboutContent />
       </Modal>
