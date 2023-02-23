@@ -15,24 +15,26 @@ export const Button: FC<ButtonProps> = ({ className, options, onChange }: Button
   return (
     <div
       className={cn({
-        'flex aspect-square flex-col space-y-5': true,
+        'aspect-square': true,
         [className]: className,
       })}
     >
-      {options.map((o) => {
-        const { label, value } = o;
-        const rounded = value === 0 ? 'rounded-t-full' : 'rounded-b-full';
-        return (
-          <button
-            key={value}
-            type="button"
-            className={`flex items-center justify-center border-2 font-sans text-xl ${rounded} h-44 max-w-[360px] px-14 uppercase lg:max-w-[520px] lg:px-28`}
-            onClick={() => handleClick(value)}
-          >
-            {label}
-          </button>
-        );
-      })}
+      <div className="h-full space-y-5">
+        {options.map((o) => {
+          const { label, value } = o;
+          const rounded = value === 0 ? 'rounded-t-full' : 'rounded-b-full';
+          return (
+            <button
+              key={value}
+              type="button"
+              className={`flex h-[48%] w-full items-center justify-center border-2 font-sans text-xl ${rounded} max-w-[360px] px-14 uppercase lg:max-w-[520px] lg:px-28`}
+              onClick={() => handleClick(value)}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 };

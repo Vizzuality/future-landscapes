@@ -36,7 +36,7 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
 
   return (
     <div key={id} ref={ref}>
-      <div className="flex flex-col items-center space-y-20 overflow-hidden p-4 lg:flex-row lg:justify-center lg:space-x-4">
+      <div className="flex h-screen w-screen flex-col items-center space-y-20 overflow-hidden p-4 lg:flex-row lg:justify-center lg:space-x-4">
         <div className="w-full max-w-lg space-y-4">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">

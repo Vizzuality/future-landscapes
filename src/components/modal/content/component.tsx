@@ -1,10 +1,9 @@
 import { FC } from 'react';
 
-import cx from 'classnames';
-
 import { motion } from 'framer-motion';
 
 import Icon from 'components/icon';
+import cn from 'lib/classnames';
 
 import CLOSE_SVG from 'svgs/ui/close.svg?sprite';
 
@@ -21,27 +20,29 @@ export const ModalContent: FC<ModalContentProps> = ({
   onOpenChange,
 }: ModalContentProps) => {
   const contentFramerVariants = {
-    initial: {
+    initial: (v) => ({
       opacity: 0,
-      x: viewport === 'sm' ? '-50%' : '0',
-      y: viewport === 'sm' ? '-60%' : '-52.5%',
-    },
-    animate: {
+      x: v === 'sm' ? '-50%' : '0%',
+      y: v === 'sm' ? '60%' : '100%',
+    }),
+    animate: (v) => ({
       opacity: 1,
-      x: viewport === 'sm' ? '-50%' : '0',
-      y: '-50%',
+      x: v === 'sm' ? '-50%' : '0%',
+      y: v === 'sm' ? '-50%' : '0%',
       transition: {
+        duraion: 0.25,
         delay: 0.125,
       },
-    },
-    exit: {
-      x: viewport === 'sm' ? '-50%' : '0',
-      y: viewport === 'sm' ? '-60%' : '-52.5%',
+    }),
+    exit: (v) => ({
+      opacity: 0,
+      x: v === 'sm' ? '-50%' : '0%',
+      y: v === 'sm' ? '-60%' : '100%',
       transition: {
         delay: 0,
         duration: 0.25,
       },
-    },
+    }),
   };
 
   return (
@@ -50,7 +51,8 @@ export const ModalContent: FC<ModalContentProps> = ({
       initial="initial"
       animate="animate"
       exit="exit"
-      className={cx({ [CONTENT_CLASSES[size]]: true, [className]: !!className })}
+      custom={viewport}
+      className={cn({ [CONTENT_CLASSES[size]]: true, [className]: !!className })}
       {...getFloatingProps({
         ref: floating,
       })}
@@ -63,7 +65,7 @@ export const ModalContent: FC<ModalContentProps> = ({
           }}
           className="text-gray-300 absolute top-6 right-6 flex items-center px-4 py-4 text-sm sm:hidden"
         >
-          <Icon icon={CLOSE_SVG} className="inline-block h-3 w-3 text-white" />
+          <Icon icon={CLOSE_SVG} className="hidden h-3 w-3 text-white sm:inline-block" />
         </button>
 
         {children}

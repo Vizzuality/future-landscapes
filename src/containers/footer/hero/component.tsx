@@ -24,14 +24,8 @@ const Hero = () => {
           About
         </button>
       </div>
-      <Modal
-        size="s"
-        title=""
-        open={isModalOpen}
-        onOpenChange={closeModal}
-        dismissable
-        className="h-2/3 rounded-t-3xl bg-black text-white"
-      >
+
+      <Modal size="s" title="" open={isModalOpen} onOpenChange={closeModal} dismissable>
         <AboutContent />
       </Modal>
     </>

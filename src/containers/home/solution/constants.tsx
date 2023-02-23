@@ -4,6 +4,8 @@ export const SOLUTIONS = [
     slug: 'adaptation-encyclopedia',
     illustration: '/images/solution/01.riv',
     title: 'Adaptation Encyclopedia',
+    pdf_desktop: '/docs/desktop/01_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/01_Future Landscape.pdf',
     content: (
       <>
         <p className="text-lg font-normal">
@@ -18,27 +20,15 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'ocean-watch',
-        name: 'Ocean Watch',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['half-earth', 'ocean-watch', 'global-forest-watch'],
   },
   {
     id: '0001',
     title: 'Evolution Guidebook',
     slug: 'evolution-guidebook',
     illustration: '/images/solution/02.riv',
+    pdf_desktop: '/docs/desktop/02_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/02_Future Landscape.pdf',
     content: (
       <>
         <p className="text-lg font-normal">
@@ -53,26 +43,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'ocean-watch',
-        name: 'Ocean Watch',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['trase', 'ocean-watch', 'sdg16'],
   },
   {
     id: '0010',
     title: 'Adaptation Atlas',
     slug: 'adaptation-atlas',
+    pdf_desktop: '/docs/desktop/03_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/03_Future Landscape.pdf',
     illustration: '/images/solution/03.riv',
     content: (
       <>
@@ -88,26 +66,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'ocean-watch',
-        name: 'Ocean Watch',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['climate-watch', 'aqueduct-water-risk-atlas', 'soils-revealed'],
   },
   {
     id: '0011',
     title: 'Handbook For Change',
     slug: 'handbook-for-change',
+    pdf_desktop: '/docs/desktop/04_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/04_Future Landscape.pdf',
     illustration: '/images/solution/04.riv',
     content: (
       <>
@@ -123,26 +89,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'ocean-watch',
-        name: 'Ocean Watch',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['aqueduct-water-risk-atlas', 'landgriffon', 'coclico'],
   },
   {
     id: '0100',
     title: 'Shared Land',
     slug: 'shared-land',
+    pdf_desktop: '/docs/desktop/05_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/05_Future Landscape.pdf',
     illustration: '/images/solution/05.riv',
     content: (
       <>
@@ -158,26 +112,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'ocean-watch',
-        name: 'Ocean Watch',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['global-mangrove-watch', 'wildlife-insights', 'forest-forward'],
   },
   {
     id: '0101',
     title: 'Shared Communities',
     slug: 'shared-communities',
+    pdf_desktop: '/docs/desktop/06_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/06_Future Landscape.pdf',
     illustration: '/images/solution/06.riv',
     content: (
       <>
@@ -194,26 +136,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'resource-watch',
-        name: 'Resource Watch',
-      },
-      {
-        id: 'iisd-sdg-hub',
-        name: 'IISD SDG Hub',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-    ],
+    projects: ['resource-watch', 'iisd-sdg-hub', 'global-forest-watch'],
   },
   {
     id: '0110',
     title: 'Nature Rulebook',
     slug: 'nature-rulebook',
+    pdf_desktop: '/docs/desktop/07_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/07_Future Landscape.pdf',
     illustration: '/images/solution/07.riv',
     content: (
       <>
@@ -230,26 +160,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'resource-watch',
-        name: 'Resource Watch',
-      },
-      {
-        id: 'soils-revealed',
-        name: 'Soils Revealed',
-      },
-      {
-        id: 'mongabay-reforestation-app',
-        name: 'Mongabay Reforestation App',
-      },
-    ],
+    projects: ['resource-watch', 'soils-revealed', 'mongabay-reforestation-app'],
   },
   {
     id: '0111',
     title: 'Systems Atlas',
     slug: 'systems-atlas',
+    pdf_desktop: '/docs/desktop/08_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/08_Future Landscape.pdf',
     illustration: '/images/solution/08.riv',
     content: (
       <>
@@ -265,26 +183,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'landgriffon',
-        name: 'LandGriffon',
-      },
-      {
-        id: 'global-forest-watch',
-        name: 'Global Forest Watch',
-      },
-      {
-        id: 'refed',
-        name: 'ReFED',
-      },
-    ],
+    projects: ['landgriffon', 'global-forest-watch', 'refed'],
   },
   {
     id: '1000',
     title: 'Corridors of Life',
     slug: 'corridors-of-life',
+    pdf_desktop: '/docs/desktop/09_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/09_Future Landscape.pdf',
     illustration: '/images/solution/09.riv',
     content: (
       <>
@@ -300,26 +206,14 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'half-earth',
-        name: 'Half-Earth',
-      },
-      {
-        id: 'global-mangrove-watch',
-        name: 'Global Mangrove Watch',
-      },
-      {
-        id: 'marxan',
-        name: 'Marxan',
-      },
-    ],
+    projects: ['half-earth', 'global-mangrove-watch', 'marxan'],
   },
   {
-    id: '1010',
+    id: '1001',
     title: 'Co-Sapien Space',
     slug: 'co-sapien-space',
+    pdf_desktop: '/docs/desktop/10_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/10_Future Landscape.pdf',
     illustration: '/images/solution/10.riv',
     content: (
       <>
@@ -336,20 +230,411 @@ export const SOLUTIONS = [
         </p>
       </>
     ),
-    // // pdf: './pdfs',
-    projects: [
-      {
-        id: 'landgriffon',
-        name: 'LandGriffon',
-      },
-      {
-        id: 'coclico',
-        name: 'CoCliCo',
-      },
-      {
-        id: 'marxan',
-        name: 'Marxan',
-      },
-    ],
+    projects: ['landgriffon', 'coclico', 'marxan'],
+  },
+  {
+    id: '1010',
+    title: 'Beyond The Biosphere',
+    slug: 'beyond-the-biosphere',
+    pdf_desktop: '/docs/desktop/11_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/11_Future Landscape.pdf',
+    illustration: '/images/solution/11.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
+          reality.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing the <b>elements</b> that
+          regulate life, from soil to the sun. We will make these solutions a reality by investing
+          in <b>nature-based</b> initiatives.
+        </p>
+      </>
+    ),
+    projects: ['climate-watch', 'coclico', 'soils-revealed'],
+  },
+  {
+    id: '1011',
+    title: 'Tomorrow´s Systems, Today',
+    slug: 'Tomorrows-systems-today',
+    pdf_desktop: '/docs/desktop/12_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/12_Future Landscape.pdf',
+    illustration: '/images/solution/12.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
+          reality.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing the <b>elements</b> that
+          regulate life, from soil to the sun. We will make these solutions a reality by investing
+          <b>human systems</b>, such as infrastructure, transport and digital enhancements.
+        </p>
+      </>
+    ),
+    projects: ['climate-change-laws-of-the-world', 'resilience-atlas', 'landgriffon'],
+  },
+  {
+    id: '1100',
+    title: 'Wild Paradise',
+    slug: 'wild-paradise',
+    pdf_desktop: '/docs/desktop/13_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/13_Future Landscape.pdf',
+    illustration: '/images/solution/13.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
+          by working with the earth rather than against her.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing <b>living beings</b> and natural
+          resources, from bees to flowers and trees. We will make these solutions a reality by
+          investing in <b>nature-based</b> initiatives.
+        </p>
+      </>
+    ),
+    projects: ['global-mangrove-watch', 'marxan', 'restor'],
+  },
+  {
+    id: '1101',
+    title: 'Haven For All',
+    slug: 'haven-for-all',
+    pdf_desktop: '/docs/desktop/14_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/14_Future Landscape.pdf',
+    illustration: '/images/solution/14.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
+          by working with the earth rather than against her.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing <b>living beings</b> and natural
+          resources, from bees to flowers and trees. We will make these solutions a reality by
+          investing in <b>human systems</b> such as infrastructure, transport and digital
+          enhancements.
+        </p>
+      </>
+    ),
+    projects: ['iisd-sdg-hub', 'marxan', 'global-fishing-watch'],
+  },
+  {
+    id: '1110',
+    title: 'Nature´s Oasis',
+    slug: 'natures-oasis',
+    pdf_desktop: '/docs/desktop/15_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/15_Future Landscape.pdf',
+    illustration: '/images/solution/15.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
+          by working with the earth rather than against her.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing <b>elements</b> that regulate
+          life, from soil to the sun. We will make these solutions a reality by investing in{' '}
+          <b>nature-based</b> initiatives.
+        </p>
+      </>
+    ),
+    projects: ['climate-watch', 'restor', 'ocean-watch'],
+  },
+  {
+    id: '1111',
+    title: 'Balanced Systems',
+    slug: 'balanced-systems ',
+    pdf_desktop: '/docs/desktop/16_Future Landscape.pdf',
+    pdf_mobile: '/docs/mobile/16_Future Landscape.pdf',
+    illustration: '/images/solution/16.riv',
+    content: (
+      <>
+        <p className="text-lg font-normal">
+          We can create a more sustainable future by taking steps to implement practical
+          <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
+          by working with the earth rather than against her.
+        </p>
+        <p className="text-lg font-normal">
+          We can solve environmental and climate issues by managing <b>elements</b> that regulate
+          life, from soil to the sun. We will make these solutions a reality by investing in{' '}
+          <b>human systems</b>, such as infrastructure, transport and digital enhancements..
+        </p>
+      </>
+    ),
+    projects: ['trase', 'climate-change-laws-of-the-world', 'refed'],
+  },
+];
+
+export const PROJECTS = [
+  {
+    id: 'landgriffon',
+    name: 'LandGriffon',
+    image: '/images/projects/LandGriffon.png',
+    link: 'https://bit.ly/3JdXD7G',
+    description: (
+      <p>
+        Empowering companies to measure, manage, and{' '}
+        <b>sustainably transform agricultural supply chain impacts.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'marxan',
+    name: 'Marxan',
+    image: '/images/projects/Marxan.png',
+    link: 'http://bit.ly/40RNZjU',
+    description: (
+      <p>
+        Supporting <b>collaboration and decision-making for biodiversity conservation</b> and
+        socio-economic objectives for land, freshwater and ocean systems.
+      </p>
+    ),
+  },
+  {
+    id: 'climate-watch',
+    name: 'Climate Watch',
+    image: '/images/projects/Climate_Watch.png',
+    link: 'http://bit.ly/40Xr6f1',
+    description: (
+      <p>
+        Gathering <b>insights on national and global progress on climate change.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'global-forest-watch',
+    name: 'Global Forest Watch',
+    image: '/images/projects/global_forest_watch.png',
+    link: 'http://bit.ly/3YwbKfB',
+    description: (
+      <p>
+        Offering the latest data, technology and tools that empower people everywhere to{' '}
+        <b>better protect forests.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'soils-revealed',
+    name: 'Soils Revealed',
+    image: '/images/projects/soils_revealed.png',
+    link: 'https://bit.ly/3F8Pa4b',
+    description: (
+      <p>
+        Visualizing how{' '}
+        <b>past and future management changes soil organic carbon stocks globally.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'global-mangrove-watch',
+    name: 'Global Mangrove Watch',
+    image: '/images/projects/global_mangrove_watch.png',
+    link: 'https://bit.ly/3PS5ZV1',
+    description: (
+      <p>
+        Monitoring near real time change to catalyse the action needed to{' '}
+        <b>protect and restore mangroves.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'coclico',
+    name: 'CoCliCo',
+    image: '/images/projects/CoCliCo.png',
+    link: 'http://bit.ly/3lBXljn',
+    description: (
+      <p>
+        Improving{' '}
+        <b>decision-making on coastal risk management and adaptation to sea-level rise.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'ocean-watch',
+    name: 'Ocean Watch',
+    image: '/images/projects/ocean_watch.png',
+    link: 'http://bit.ly/3jX3p5L',
+    description: (
+      <p>
+        Providing trusted data for <b>sustainable ocean management and development.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'half-earth',
+    name: 'Half-Earth',
+    image: '/images/projects/half_earth.png',
+    link: 'http://bit.ly/3YG4q0O',
+    description: (
+      <p>
+        Reimaging{' '}
+        <b>
+          the way we care for our planet to inspire informed collective action to save the
+          biosphere.
+        </b>
+      </p>
+    ),
+  },
+  {
+    id: 'trase',
+    name: 'Trase',
+    image: '/images/projects/Trase.png',
+    link: 'https://bit.ly/3sAqQ5z',
+    description: (
+      <p>
+        Providing a unique <b>supply chain</b> mapping approach that revolutionises our
+        understanding of the trade and financing of deforestation-linked commodities.
+      </p>
+    ),
+  },
+  {
+    id: 'aqueduct-water-risk-atlas',
+    name: 'Aqueduct Water Risk Atlas',
+    image: '/images/projects/aqueduct_water_risk_atlas.png',
+    link: 'http://bit.ly/3jPFV2B',
+    description: (
+      <p>
+        Using cutting-edge data to identify and <b>evaluate water risks around the world,</b> such
+        as floods, droughts and stress.
+      </p>
+    ),
+  },
+  {
+    id: 'restor',
+    name: 'Restor',
+    image: '/images/projects/Restor.png',
+    link: 'http://bit.ly/3E5SxJA',
+    description: (
+      <p>
+        Connecting people and projects to scientific data, monitoring tools, funding, and each other
+        to increase the impact, scale, and <b>sustainability of restoration efforts.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'iisd-sdg-hub',
+    name: 'IISD SDG Hub',
+    image: '/images/projects/iisd_sdg_hub.png',
+    link: 'http://bit.ly/3RZqPnt',
+    description: (
+      <p>
+        A hub for <b>news and resources on all 17 Sustainable Development Goals (SDGs).</b>
+      </p>
+    ),
+  },
+  {
+    id: 'climate-change-laws-of-the-world',
+    name: 'Climate Change Laws of the World',
+    image: '/images/projects/climate_change_laws_of_the_world.png',
+    link: 'http://bit.ly/3YAqZnV',
+    description: (
+      <p>
+        Covering <b>national-level climate change legislation and policies globally</b>, including
+        areas of energy, transport, land use, and climate resilience.
+      </p>
+    ),
+  },
+  {
+    id: 'refed',
+    name: 'ReFED',
+    image: '/images/projects/ReFED.png',
+    link: 'http://bit.ly/3YwcT6T',
+    description: (
+      <p>
+        Advancing <b>data-driven solutions to fight food waste.</b> ReFED is working across the food
+        system to cut food loss and waste in half by the year 2030.
+      </p>
+    ),
+  },
+  {
+    id: 'resource-watch',
+    name: 'Resource Watch',
+    image: '/images/projects/resource_watch.png',
+    link: 'http://bit.ly/40WZNRK',
+    description: (
+      <p>
+        Bringing together hundreds of the most trusted and timely{' '}
+        <b>planetary and societal datasets for a sustainable future.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'global-fishing-watch',
+    name: 'Global Fishing Watch',
+    image: '/images/projects/global_fishing_watch.png',
+    link: 'http://bit.ly/3YMjb27',
+    description: (
+      <p>
+        Making <b>fishing activity transparent</b> to enable fair and sustainable use of our ocean.
+      </p>
+    ),
+  },
+  {
+    id: 'mongabay-reforestation-app',
+    name: 'Mongabay Reforestation App',
+    image: '/images/projects/mongabay_reforestation_app.png',
+    link: 'http://bit.ly/3RZWfu7',
+    description: (
+      <p>
+        A <b>global directory of tree-planting projects</b>, improving transparency in the sector
+        and connecting people with projects that align with their interests.
+      </p>
+    ),
+  },
+  {
+    id: 'forest-forward',
+    name: 'Forest Forward',
+    image: '/images/projects/forest_forward.png',
+    link: 'http://bit.ly/3HVYM3X',
+    description: (
+      <p>
+        Forest Forward identifies <b>future suitable areas for forestry</b>, combining species
+        observations with climate variables to describe their suitable habitat.
+      </p>
+    ),
+  },
+  {
+    id: 'sdg16',
+    name: 'SDG16',
+    image: '/images/projects/SDG16.png',
+    link: 'http://bit.ly/3E6iOra',
+    description: (
+      <p>
+        Tracking progress towards the achievement of{' '}
+        <b>SDG16, on peace, justice and stronger institutions.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'wildlife-insights',
+    name: 'Wildlife Insights',
+    image: '/images/projects/wildlife_insights.png',
+    link: 'http://bit.ly/3KbQ9VL',
+    description: (
+      <p>
+        Streamlining conservation decision-making by providing machine learning models and other
+        tools to <b>manage, analyze and share camera trap data.</b>
+      </p>
+    ),
+  },
+  {
+    id: 'resilience-atlas',
+    name: 'Resilience Atlas',
+    image: '/images/projects/resilience_atlas.png',
+    link: 'http://bit.ly/3k3Kfem',
+    description: (
+      <p>
+        Understanding key stressors, shocks and insights into the ways that different types of
+        wealth and assets <b>impact resilience in particular contexts.</b>
+      </p>
+    ),
   },
 ];

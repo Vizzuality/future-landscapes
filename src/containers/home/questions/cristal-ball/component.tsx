@@ -28,7 +28,7 @@ const CristalBall = forwardRef<HTMLDivElement>((_, ref) => {
       <FormSpy
         subscription={{ valid: true, dirty: true }}
         onChange={(props) => {
-          if (props.valid && props.dirty && count === '100%') {
+          if (props.valid && props.dirty) {
             form.submit();
           }
         }}

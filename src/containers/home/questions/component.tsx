@@ -39,7 +39,7 @@ const Questions = () => {
       push({
         pathname: `/solutions/${S.slug}`,
       });
-    }, 10000);
+    }, 200);
   }, []);
 
   const FORMATED_QUESTIONS = useMemo(() => {
@@ -65,7 +65,7 @@ const Questions = () => {
     <FormRFF onSubmit={handleSubmit} initialValues={INITIAL_VALUES}>
       {(fprops) => (
         <Background color={bgColor} step={step}>
-          <form onSubmit={fprops.handleSubmit} autoComplete="off">
+          <form onSubmit={fprops.handleSubmit} autoComplete="off" className="h-full">
             <Carousel
               slide={step - 1}
               slides={FORMATED_QUESTIONS}

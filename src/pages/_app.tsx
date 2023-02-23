@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 
+import { Inter } from '@next/font/google';
 import { OverlayProvider } from '@react-aria/overlays';
 import { QueryClient, QueryClientProvider, Hydrate } from '@tanstack/react-query';
 
@@ -11,6 +12,14 @@ import ThirdParty from 'containers/third-party';
 import { MediaContextProvider } from 'components/media-query';
 import Layout from 'layouts/component';
 import { GAPage } from 'lib/analytics/ga';
+
+const inter = Inter({
+  weight: ['300', '400', '600', '700', '900'],
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'block',
+});
 
 import 'styles/globals.css';
 
@@ -48,19 +57,27 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   }, [router.events, handleRouteChangeCompleted]);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <Hydrate state={pageProps.dehydratedState}>
-        <OverlayProvider>
-          {/* @ts-ignore: https://github.com/artsy/fresnel/issues/281 */}
-          <MediaContextProvider>
-            <Layout>
-              <ThirdParty />
-              <Component {...pageProps} />
-            </Layout>
-          </MediaContextProvider>
-        </OverlayProvider>
-      </Hydrate>
-    </QueryClientProvider>
+    <>
+      <style jsx global>{`
+        :root {
+          --font-inter: ${inter.style.fontFamily};
+        }
+      `}</style>
+
+      <QueryClientProvider client={queryClient}>
+        <Hydrate state={pageProps.dehydratedState}>
+          <OverlayProvider>
+            {/* @ts-ignore: https://github.com/artsy/fresnel/issues/281 */}
+            <MediaContextProvider>
+              <Layout>
+                <ThirdParty />
+                <Component {...pageProps} />
+              </Layout>
+            </MediaContextProvider>
+          </OverlayProvider>
+        </Hydrate>
+      </QueryClientProvider>
+    </>
   );
 };
 
