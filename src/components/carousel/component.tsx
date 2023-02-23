@@ -10,7 +10,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   autoplay,
   options = {
     duration: 500,
-    circular: true,
+    circular: false,
     bound: false,
   },
   ...rest
@@ -63,7 +63,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   }, [slide]);
 
   return (
-    <div className="w-full">
+    <div className="relative z-0 w-full">
       <div
         role="presentation"
         className="overflow-hidden"

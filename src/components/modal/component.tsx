@@ -45,7 +45,7 @@ export const Modal = (props: ModalProps) => {
     <FloatingPortal>
       <AnimatePresence>
         {open && (
-          <FloatingOverlay lockScroll>
+          <FloatingOverlay className="fixed top-0 left-0">
             <motion.div
               variants={overlayFramerVariants}
               initial="initial"
@@ -57,7 +57,7 @@ export const Modal = (props: ModalProps) => {
                 <>
                   <Media
                     lessThan="sm"
-                    className="pointer-events-none absolute flex h-full w-full grow flex-col"
+                    className="pointer-events-none absolute top-0 left-0 h-full w-full grow"
                   >
                     <ModalContent
                       {...props}
@@ -67,7 +67,7 @@ export const Modal = (props: ModalProps) => {
                   </Media>
                   <Media
                     greaterThanOrEqual="sm"
-                    className="pointer-events-none absolute flex h-full w-full grow flex-col"
+                    className="pointer-events-none absolute top-0 left-0 h-full w-full grow"
                   >
                     <ModalContent
                       {...props}

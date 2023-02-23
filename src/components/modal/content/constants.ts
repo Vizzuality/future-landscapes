@@ -1,5 +1,5 @@
 export const COMMON_CONTENT_CLASSES =
-  'absolute pointer-events-auto top-1/2 inset-x-4 left-0 sm:left-1/2 transform -translate-y-1/2 w-full h-full sm:h-auto sm:max-h-[90%] sm:-translate-x-1/2 outline-none bg-white flex flex-col grow overflow-hidden sm:rounded-3xl';
+  'absolute pointer-events-auto bottom-0 sm:bottom-auto sm:top-1/2 inset-x-4 left-0 sm:left-1/2 transform sm:-translate-y-1/2 w-full h-full sm:h-auto sm:max-h-[90%] sm:-translate-x-1/2 outline-none bg-white flex flex-col grow overflow-hidden sm:rounded-3xl h-2/3 bg-black text-white rounded-t-3xl';
 export const CONTENT_CLASSES = {
   xs: `sm:w-[300px] ${COMMON_CONTENT_CLASSES}`,
   s: `sm:w-4/6 md:w-1/2 lg:w-5/12 xl:w-1/3 ${COMMON_CONTENT_CLASSES}`,
@@ -8,4 +8,5 @@ export const CONTENT_CLASSES = {
   xl: `sm:w-full md:w-full lg:w-full xl:w-full ${COMMON_CONTENT_CLASSES}`,
 };
 
-export const OVERLAY_CLASSES = 'z-50 absolute inset-0 bg-black bg-blur';
+export const OVERLAY_CLASSES =
+  'z-50 absolute inset-0 bg-black bg-blur overflow-hidden w-full h-full top-0 left-0';

@@ -19,6 +19,11 @@ export const COLORS = [
     name: 'd',
     bgColor: 'bg-green-100',
   },
+  {
+    id: 5,
+    name: 'e',
+    bgColor: 'bg-black',
+  },
 ];
 
 export const QUESTIONS = [
@@ -32,7 +37,7 @@ export const QUESTIONS = [
     ),
     options: [
       {
-        label: <>Unverstanding the problem</>,
+        label: <>Understanding the problem</>,
         value: 0,
       },
       {
