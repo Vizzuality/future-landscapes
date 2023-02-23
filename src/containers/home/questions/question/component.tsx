@@ -2,6 +2,9 @@ import { forwardRef, useCallback } from 'react';
 
 import { Field as FieldRFF, useForm } from 'react-final-form';
 
+import { readWritePlayingAtom } from 'store/playing';
+import { readWriteDirectionAtom } from 'store/slider';
+import { readWriteSolutionsAtom } from 'store/solutions';
 import { readWriteStepAtom } from 'store/step';
 
 import { useAtom } from 'jotai';
@@ -23,16 +26,37 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
   const form = useForm();
 
   const [step, setStep] = useAtom(readWriteStepAtom);
+  const [, setDirection] = useAtom(readWriteDirectionAtom);
+  const [, setSolutions] = useAtom(readWriteSolutionsAtom);
+  const [, setPalying] = useAtom(readWritePlayingAtom);
 
   const { name, question, options } = QUESTIONS.find((q) => q.id === id);
 
   const handleOnChange = useCallback(
     (v) => {
-      form.change(name, v);
-      setStep(step + 1);
+      if (step < 4) {
+        setStep(step + 1);
+        setDirection('forward');
+        form.change(name, v);
+      }
+      if (step === 4) {
+        form.change(name, v);
+
+        const { hasValidationErrors, values } = form.getState();
+        !hasValidationErrors && form.submit();
+
+        const { a, b, c, d } = values;
+        setSolutions(`${a}${b}${c}${d}`);
+      }
     },
-    [form, name, setStep, step]
+    [form, name, setDirection, setSolutions, setStep, step]
   );
+
+  const resetToPlay = useCallback(() => {
+    setSolutions('');
+    setStep(1);
+    setPalying(false);
+  }, [setPalying, setSolutions, setStep]);
 
   return (
     <div key={id} ref={ref}>
@@ -43,8 +67,8 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
               {`0${id}`}
               <span className="opacity-20"> - 04</span>
             </p>
-            <button type="button" onClick={() => setStep(0)}>
-              <Icon icon={CLOSE_SVG} className="h-6 w-6 lg:h-7 lg:w-32" />
+            <button type="button" onClick={resetToPlay}>
+              <Icon icon={CLOSE_SVG} className="absolute top-4 right-4 h-6 w-6 lg:h-7 lg:w-7" />
             </button>
           </div>
 

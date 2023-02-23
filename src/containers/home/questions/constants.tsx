@@ -37,7 +37,7 @@ export const QUESTIONS = [
     ),
     options: [
       {
-        label: <>Unverstanding the problem</>,
+        label: <>Understanding the problem</>,
         value: 0,
       },
       {

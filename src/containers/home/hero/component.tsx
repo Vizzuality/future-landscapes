@@ -1,4 +1,4 @@
-import { readWriteStepAtom } from 'store/step';
+import { readWritePlayingAtom } from 'store/playing';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAtom } from 'jotai';
@@ -8,7 +8,7 @@ import Background from 'containers/background';
 import Button from 'components/button';
 
 const Hero = () => {
-  const [step, setStep] = useAtom(readWriteStepAtom);
+  const [, setPlaying] = useAtom(readWritePlayingAtom);
 
   return (
     <AnimatePresence>
@@ -36,7 +36,7 @@ const Hero = () => {
               What&apos;s your sustainable vision?
             </h1>
             <h2 className="text-xl lg:text-2xl">Let&apos;s paint it into a picture.</h2>
-            <Button theme="primary" size="xl" onClick={() => setStep(step + 1)}>
+            <Button theme="primary" size="xl" onClick={() => setPlaying(true)}>
               Start quiz
             </Button>
           </div>

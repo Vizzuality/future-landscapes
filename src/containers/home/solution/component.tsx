@@ -3,6 +3,8 @@ import { useCallback, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { readWritePlayingAtom } from 'store/playing';
+import { readWriteSolutionsAtom } from 'store/solutions';
 import { readWriteStepAtom } from 'store/step';
 
 import { LayoutGroup, motion } from 'framer-motion';
@@ -26,7 +28,9 @@ import ShareContent from './share/component';
 
 const Solution = () => {
   const [slide, setSlide] = useState(0);
-  const [step, setStep] = useAtom(readWriteStepAtom);
+  const [, setStep] = useAtom(readWriteStepAtom);
+  const [, setSolutions] = useAtom(readWriteSolutionsAtom);
+  const [, setPalying] = useAtom(readWritePlayingAtom);
   const { query } = useRouter();
   const { isOpen: isModalOpen, open: openModal, close: closeModal } = useModal();
 
@@ -45,9 +49,15 @@ const Solution = () => {
     return cards;
   }, [projectsArray]);
 
+  const resetToPlay = useCallback(() => {
+    setSolutions('');
+    setStep(1);
+    setPalying(false);
+  }, [setPalying, setSolutions, setStep]);
+
   return (
     <>
-      <div className="flex flex-col items-center pt-4">
+      <div className="flex flex-col items-center pt-4 lg:hidden">
         <Link href="/">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-7 lg:w-32" />
         </Link>
@@ -159,7 +169,7 @@ const Solution = () => {
 
         <div className="flex flex-col items-center space-y-8">
           <Link href="/">
-            <Button theme="primary-alt" size="xl">
+            <Button theme="primary-alt" size="xl" onClick={resetToPlay}>
               Play Again
             </Button>
           </Link>

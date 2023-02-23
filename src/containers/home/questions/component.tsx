@@ -1,21 +1,21 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback } from 'react';
 
 import { Form as FormRFF } from 'react-final-form';
 
 import { useRouter } from 'next/router';
 
-import { readWriteStepAtom } from 'store/step';
+import { directionAtom } from 'store/slider';
+import { solutionsAtom } from 'store/solutions';
+import { stepAtom } from 'store/step';
 
+import { motion, AnimatePresence } from 'framer-motion';
 import { useAtom } from 'jotai';
 
 import Background from 'containers/background';
 
-import Carousel from 'components/carousel';
-
 import { SOLUTIONS } from '../solution/constants';
 
-import { COLORS, QUESTIONS } from './constants';
-import CristalBall from './cristal-ball';
+import { COLORS } from './constants';
 import Question from './question';
 
 const INITIAL_VALUES = {
@@ -27,53 +27,50 @@ const INITIAL_VALUES = {
 
 const Questions = () => {
   const { push } = useRouter();
-  const [step, setStep] = useAtom(readWriteStepAtom);
+  const [step] = useAtom(stepAtom);
+  const [direction] = useAtom(directionAtom);
 
   const { bgColor } = step !== 0 && COLORS.find((c) => c.id === step);
 
-  const handleSubmit = useCallback((values) => {
-    setTimeout(() => {
-      const { a, b, c, d } = values;
-      const S = SOLUTIONS.find((s) => s.id === `${a}${b}${c}${d}`);
+  const handleSubmit = useCallback(
+    (values) => {
+      setTimeout(() => {
+        const { a, b, c, d } = values;
+        const S = SOLUTIONS.find((s) => s.id === `${a}${b}${c}${d}`);
 
-      push({
-        pathname: `/solutions/${S.slug}`,
-      });
-    }, 200);
-  }, []);
-
-  const FORMATED_QUESTIONS = useMemo(() => {
-    const qs = QUESTIONS.map((q) => {
-      const { id, name } = q;
-      return {
-        id: id,
-        name: name,
-        content: <Question key={name} id={id} />,
-      };
-    });
-
-    const loader = {
-      id: 5,
-      name: 'e',
-      content: <CristalBall />,
-    };
-
-    return [...qs, loader];
-  }, []);
+        push({
+          pathname: `/solutions/${S.slug}`,
+        });
+      }, 3000);
+    },
+    [push]
+  );
 
   return (
     <FormRFF onSubmit={handleSubmit} initialValues={INITIAL_VALUES}>
       {(fprops) => (
         <Background color={bgColor} step={step}>
           <form onSubmit={fprops.handleSubmit} autoComplete="off" className="h-full">
-            <Carousel
-              slide={step - 1}
-              slides={FORMATED_QUESTIONS}
-              autoplay={0}
-              onWillChange={({ index }) => {
-                setStep(index + 1);
-              }}
-            />
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                variants={{
+                  enter: (direction) => ({
+                    x: direction === 'backward' ? '-100%' : '100%',
+                  }),
+                  center: { x: 0 },
+                  exit: (direction) => ({
+                    x: direction === 'backward' ? '100%' : '-100%',
+                  }),
+                }}
+                custom={direction}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 1 }}
+              >
+                <Question id={step} />
+              </motion.div>
+            </AnimatePresence>
           </form>
         </Background>
       )}
