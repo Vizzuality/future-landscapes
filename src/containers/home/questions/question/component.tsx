@@ -46,8 +46,8 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
 
   return (
     <div key={id} ref={ref}>
-      <div className="grid h-screen w-screen grid-cols-12 justify-items-center gap-4 overflow-hidden p-4 lg:gap-4">
-        <div className="col-span-12 max-w-lg space-y-4 lg:col-span-6">
+      <div className="grid h-screen w-screen grid-cols-12 content-center justify-items-center gap-4 overflow-hidden p-4 lg:gap-4">
+        <div className="col-span-12 max-w-lg space-y-4 lg:col-span-4 lg:col-start-3">
           <div>
             <p className="text-xl font-semibold">
               {`0${id}`}
@@ -57,7 +57,7 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
 
           {question}
         </div>
-        <div className="col-span-10 col-start-2 space-y-3 self-start lg:col-span-6 lg:self-auto">
+        <div className="col-span-12 space-y-6 self-start lg:col-span-4 lg:col-end-11 lg:self-auto">
           <FieldRFF name={name} validate={composeValidators([{ presence: true }])}>
             {() => {
               return <Button options={options} onChange={handleOnChange} />;

@@ -59,12 +59,12 @@ const Solution = () => {
   return (
     <>
       <div className="flex flex-col items-center pt-4 lg:hidden">
-        <a href="https://www.vizzuality.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-7 lg:w-32" />
         </a>
       </div>
       <div className="grid grid-cols-12 items-center gap-10 p-4 pb-10 lg:gap-7 lg:p-8 lg:pb-0">
-        <div className="col-span-12 grid grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-5 lg:col-start-2 lg:flex-row">
+        <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2 lg:flex-row">
           <div className="relative col-span-12 w-full lg:col-span-7">
             <a
               href={pdf_desktop}
@@ -75,7 +75,11 @@ const Solution = () => {
               <Icon icon={DOWNLOAD_SVG} className="h-8 w-8 text-white" />
             </a>
 
-            <RiveComponent imageUrl={illustration} autoplay className="h-[580px] w-full" />
+            <RiveComponent
+              imageUrl={illustration}
+              autoplay
+              className="h-[580px] w-full lg:h-[760px]"
+            />
           </div>
 
           <div className="col-span-12 space-y-4 bg-black p-3 font-sans text-white lg:col-span-5">
@@ -84,7 +88,7 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="col-span-12 flex w-full flex-col items-center space-y-10 lg:col-span-4 lg:col-end-11 lg:space-y-8">
+        <div className="col-span-12 flex h-full w-full flex-col items-center space-y-10 pt-6 pb-6 lg:col-span-4 lg:col-end-12 lg:space-y-8">
           <div className="space-y-4 font-sans text-lg lg:text-base">
             <p>
               Your choices have created your variation of our shared future landscape. Together, all
