@@ -19,7 +19,7 @@ const ShareContent = () => {
         <p>Share in:</p>
       </div>
 
-      <div className="flex space-x-11 text-xs">
+      <div className="flex space-x-4 text-xs">
         <a
           href={useSocialMediaShare({
             social: 'twitter',

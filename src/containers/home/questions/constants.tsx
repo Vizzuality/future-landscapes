@@ -79,7 +79,7 @@ export const QUESTIONS = [
         label: (
           <div className="flex flex-col items-center">
             <p>Life</p>
-            <p>fauna, flora, humans</p>
+            <p className="text-base italic">fauna, flora, humans</p>
           </div>
         ),
         value: 0,
@@ -88,7 +88,7 @@ export const QUESTIONS = [
         label: (
           <div className="flex flex-col items-center">
             <p>Elements</p>
-            <p>geology, air, climate, water</p>
+            <p className="text-base italic">geology, air, climate, water</p>
           </div>
         ),
         value: 1,

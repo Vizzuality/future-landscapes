@@ -22,12 +22,12 @@ export const Button: FC<ButtonProps> = ({ className, options, onChange }: Button
       <div className="h-full space-y-5">
         {options.map((o) => {
           const { label, value } = o;
-          const rounded = value === 0 ? 'rounded-t-full' : 'rounded-b-full';
+          const rounded = value === 0 ? 'rounded-t-full rounded-b-lg' : 'rounded-b-full';
           return (
             <button
               key={value}
               type="button"
-              className={`flex h-[48%] w-full items-center justify-center border-2 font-sans text-xl ${rounded} max-w-[360px] px-14 uppercase lg:max-w-[520px] lg:px-28`}
+              className={`shadow-solid-mobile lg:shadow-solid-desktop flex h-[48%] w-full items-center justify-center border-2 border-black font-sans text-xl ${rounded} max-w-[360px] px-14 uppercase active:bg-black active:text-white active:shadow-none lg:max-w-[520px] lg:px-28`}
               onClick={() => handleClick(value)}
             >
               {label}

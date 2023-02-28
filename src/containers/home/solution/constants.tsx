@@ -8,12 +8,12 @@ export const SOLUTIONS = [
     pdf_mobile: '/docs/mobile/01_Future Landscape.pdf',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -31,12 +31,12 @@ export const SOLUTIONS = [
     pdf_mobile: '/docs/mobile/02_Future Landscape.pdf',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -54,12 +54,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/03.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -77,12 +77,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/04.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -100,12 +100,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/05.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -123,12 +123,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/06.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we <b>prevent</b> severe climate and ecological breakdown by
           working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>human systems</b>, such as infrastructure, transport and digital
@@ -147,12 +147,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/07.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we <b>prevent</b> severe climate and ecological breakdown by
           working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing the <b>elements</b> that
           regulate life, from soil to the sun. We will make these solutions a reality by investing
           in <b>nature-based</b>
@@ -171,12 +171,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/08.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we <b>prevent</b> severe climate and ecological breakdown by
           working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing the <b>elements</b> that
           regulate life, from soil to the sun. We will make these solutions a reality by investing
           in <b>human systems</b>, such as infrastructure, transport and digital enhancements.
@@ -194,12 +194,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/09.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to build <b>knowledge</b> and
           track change. A future where we <b>prevent</b> severe climate and ecological breakdown by
           working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -217,12 +217,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/10.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>human systems</b>, such as infrastructure, transport and digital
@@ -241,12 +241,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/11.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing the <b>elements</b> that
           regulate life, from soil to the sun. We will make these solutions a reality by investing
           in <b>nature-based</b> initiatives.
@@ -264,12 +264,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/12.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing the <b>elements</b> that
           regulate life, from soil to the sun. We will make these solutions a reality by investing
           <b>human systems</b>, such as infrastructure, transport and digital enhancements.
@@ -287,12 +287,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/13.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>nature-based</b> initiatives.
@@ -310,12 +310,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/14.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>living beings</b> and natural
           resources, from bees to flowers and trees. We will make these solutions a reality by
           investing in <b>human systems</b> such as infrastructure, transport and digital
@@ -334,12 +334,12 @@ export const SOLUTIONS = [
     illustration: '/images/solution/15.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>elements</b> that regulate
           life, from soil to the sun. We will make these solutions a reality by investing in{' '}
           <b>nature-based</b> initiatives.
@@ -351,18 +351,18 @@ export const SOLUTIONS = [
   {
     id: '1111',
     title: 'Balanced Systems',
-    slug: 'balanced-systems ',
+    slug: 'balanced-systems',
     pdf_desktop: '/docs/desktop/16_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/16_Future Landscape.pdf',
     illustration: '/images/solution/16.riv',
     content: (
       <>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can create a more sustainable future by taking steps to implement practical
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
-        <p className="text-lg font-normal">
+        <p className="text-lg font-normal lg:text-base">
           We can solve environmental and climate issues by managing <b>elements</b> that regulate
           life, from soil to the sun. We will make these solutions a reality by investing in{' '}
           <b>human systems</b>, such as infrastructure, transport and digital enhancements..

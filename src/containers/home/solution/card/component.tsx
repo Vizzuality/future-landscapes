@@ -20,9 +20,9 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
       <div
         ref={ref}
         key={id}
-        className="ml-6 max-w-[338px] overflow-hidden rounded-3xl border-2 p-1"
+        className="lg:shadow-solid-card-d ml-6 max-w-[338px] overflow-hidden rounded-3xl border-2 p-1 lg:max-w-[477px]"
       >
-        <div className="relative h-56 overflow-hidden rounded-3xl object-cover">
+        <div className="relative h-56 overflow-hidden rounded-3xl object-cover lg:hidden">
           <Image priority src={image} alt="card" fill />
         </div>
 
