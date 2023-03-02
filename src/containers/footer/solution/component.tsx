@@ -9,7 +9,7 @@ import VIZZ_SVG from 'svgs/ui/vizzuality.svg?sprite';
 
 const Solution = () => {
   return (
-    <div className="flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+    <div className="flex w-full flex-col items-center space-y-8 lg:flex-row lg:justify-between lg:space-y-0">
       <Media greaterThanOrEqual="sm">
         <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-4 w-20 lg:h-6 lg:w-28" />

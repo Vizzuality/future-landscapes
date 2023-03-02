@@ -46,7 +46,7 @@ const STARS_QUESTIONS = [
     id: 6,
     src: `/images/background/star1.riv`,
     autoplay: true,
-    className: 'absolute bottom-52 left-11 h-11 w-11 lg:h-24 lg:w-24 lg:left-1/3 lg:bottom-64',
+    className: 'absolute bottom-16 left-11 h-8 w-8 lg:h-24 lg:w-24 lg:left-1/3 lg:bottom-64',
   },
   {
     id: 7,
