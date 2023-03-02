@@ -5,6 +5,7 @@ import { useSocialMediaShare } from 'hooks/social';
 
 import Icon from 'components/icon';
 
+import LINK_SVG from 'svgs/social/link.svg?sprite';
 import LINKEDIN_SVG from 'svgs/social/linkedin.svg?sprite';
 import TWITTER_SVG from 'svgs/social/twitter.svg?sprite';
 
@@ -44,7 +45,7 @@ const ShareContent = () => {
         <a
           href={useSocialMediaShare({
             social: 'linkedin',
-            url: `${process.env.NEXT_PUBLIC_BASE_PATH}${asPath}`,
+            url: `http://future-landscapes.vizzuality.com${asPath}`,
             caption:
               'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours turn out like? Find out at http://future-landscapes.vizzuality.com/',
           })}
@@ -55,6 +56,19 @@ const ShareContent = () => {
           <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-white lg:h-7 lg:w-7" />
           <p>Linkedin</p>
         </a>
+        <button
+          type="button"
+          onClick={() =>
+            navigator.clipboard.writeText(`http://future-landscapes.vizzuality.com${asPath}`)
+          }
+          className="flex flex-col items-center space-y-2 hover:text-grey focus:text-grey"
+        >
+          <Icon
+            icon={LINK_SVG}
+            className="h-8 w-8 text-white hover:text-grey focus:text-grey lg:h-7 lg:w-7"
+          />
+          <p>Copy Link</p>
+        </button>
       </div>
     </div>
   );
