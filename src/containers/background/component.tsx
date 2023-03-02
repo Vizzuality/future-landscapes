@@ -62,51 +62,28 @@ export const Background: React.FC<BackgroundProps> = ({
   step,
 }: BackgroundProps) => {
   const [playing] = useAtom(playingAtom);
+
   return (
-    <>
-      <Media
-        lessThan="sm"
-        className={cn({
-          'h-full w-full overflow-hidden transition-colors': true,
-          [color]: color,
-          'lg:bg-multiple-img': step !== 0,
-        })}
-      >
-        {!playing &&
-          STARS_0.map((s) => (
-            <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
-          ))}
+    <div
+      className={cn({
+        'h-full w-full overflow-hidden transition-colors': true,
+        [color]: color,
+        'lg:bg-multiple-img': step !== 0,
+      })}
+    >
+      {!playing &&
+        STARS_0.map((s) => (
+          <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
+        ))}
 
-        {step > 0 &&
-          step <= 4 &&
-          STARS_QUESTIONS.map((s) => (
-            <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
-          ))}
+      {step > 0 &&
+        step <= 4 &&
+        STARS_QUESTIONS.map((s) => (
+          <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
+        ))}
 
-        {children}
-      </Media>
-      <Media
-        greaterThanOrEqual="sm"
-        className={cn({
-          'h-full w-full overflow-hidden transition-colors': true,
-          [color]: color,
-          'lg:bg-multiple-img': step !== 0,
-        })}
-      >
-        {!playing &&
-          STARS_0.map((s) => (
-            <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
-          ))}
-
-        {step > 0 &&
-          step <= 4 &&
-          STARS_QUESTIONS.map((s) => (
-            <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
-          ))}
-
-        {children}
-      </Media>
-    </>
+      {children}
+    </div>
   );
 };
 

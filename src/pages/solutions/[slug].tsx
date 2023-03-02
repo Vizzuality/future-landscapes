@@ -1,15 +1,21 @@
+import { useRouter } from 'next/router';
+
 import Solutions from 'containers/home/solution';
 import { SOLUTIONS } from 'containers/home/solution/constants';
 import MetaTags from 'containers/meta-tags';
 
-const IMAGE_URL = `${process.env.NEXT_PUBLIC_BASE_PATH}images/home.png`;
-
 const SolutionPage: React.FC = () => {
+  const { query } = useRouter();
+  const solution = SOLUTIONS.find((s) => s.slug === query.slug);
+  const { social, title } = solution;
+
+  const IMAGE_URL = `${process.env.NEXT_PUBLIC_BASE_PATH}${social.stories}`;
+
   return (
     <div>
       <MetaTags
         title="Vizzuality | Future Landscapes"
-        description="A quizz to know what is your sustainable vision."
+        description={title}
         type="website"
         imageURL={IMAGE_URL}
       />

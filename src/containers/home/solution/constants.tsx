@@ -3,6 +3,10 @@ export const SOLUTIONS = [
     id: '0000',
     slug: 'adaptation-encyclopedia',
     illustration: '/images/solution/01.riv',
+    social: {
+      feed: '/images/social/feed/01.png',
+      stories: '/images/social/stories/01.png',
+    },
     title: 'Adaptation Encyclopedia',
     pdf_desktop: '/docs/desktop/01_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/01_Future Landscape.pdf',
@@ -27,6 +31,10 @@ export const SOLUTIONS = [
     title: 'Evolution Guidebook',
     slug: 'evolution-guidebook',
     illustration: '/images/solution/02.riv',
+    social: {
+      feed: '/images/social/feed/02.png',
+      stories: '/images/social/stories/02.png',
+    },
     pdf_desktop: '/docs/desktop/02_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/02_Future Landscape.pdf',
     content: (
@@ -52,6 +60,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/03_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/03_Future Landscape.pdf',
     illustration: '/images/solution/03.riv',
+    social: {
+      feed: '/images/social/feed/03.png',
+      stories: '/images/social/stories/03.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -75,6 +87,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/04_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/04_Future Landscape.pdf',
     illustration: '/images/solution/04.riv',
+    social: {
+      feed: '/images/social/feed/04.png',
+      stories: '/images/social/stories/04.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -98,6 +114,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/05_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/05_Future Landscape.pdf',
     illustration: '/images/solution/05.riv',
+    social: {
+      feed: '/images/social/feed/05.png',
+      stories: '/images/social/stories/05.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -121,6 +141,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/06_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/06_Future Landscape.pdf',
     illustration: '/images/solution/06.riv',
+    social: {
+      feed: '/images/social/feed/06.png',
+      stories: '/images/social/stories/06.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -145,6 +169,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/07_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/07_Future Landscape.pdf',
     illustration: '/images/solution/07.riv',
+    social: {
+      feed: '/images/social/feed/07.png',
+      stories: '/images/social/stories/07.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -169,6 +197,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/08_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/08_Future Landscape.pdf',
     illustration: '/images/solution/08.riv',
+    social: {
+      feed: '/images/social/feed/08.png',
+      stories: '/images/social/stories/08.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -192,6 +224,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/09_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/09_Future Landscape.pdf',
     illustration: '/images/solution/09.riv',
+    social: {
+      feed: '/images/social/feed/09.png',
+      stories: '/images/social/stories/09.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -215,6 +251,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/10_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/10_Future Landscape.pdf',
     illustration: '/images/solution/10.riv',
+    social: {
+      feed: '/images/social/feed/10.png',
+      stories: '/images/social/stories/10.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -239,6 +279,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/11_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/11_Future Landscape.pdf',
     illustration: '/images/solution/11.riv',
+    social: {
+      feed: '/images/social/feed/11.png',
+      stories: '/images/social/stories/11.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -262,6 +306,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/12_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/12_Future Landscape.pdf',
     illustration: '/images/solution/12.riv',
+    social: {
+      feed: '/images/social/feed/12.png',
+      stories: '/images/social/stories/12.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -285,6 +333,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/13_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/13_Future Landscape.pdf',
     illustration: '/images/solution/13.riv',
+    social: {
+      feed: '/images/social/feed/13.png',
+      stories: '/images/social/stories/13.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -308,6 +360,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/14_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/14_Future Landscape.pdf',
     illustration: '/images/solution/14.riv',
+    social: {
+      feed: '/images/social/feed/14.png',
+      stories: '/images/social/stories/14.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -332,6 +388,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/15_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/15_Future Landscape.pdf',
     illustration: '/images/solution/15.riv',
+    social: {
+      feed: '/images/social/feed/15.png',
+      stories: '/images/social/stories/15.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
@@ -355,6 +415,10 @@ export const SOLUTIONS = [
     pdf_desktop: '/docs/desktop/16_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/16_Future Landscape.pdf',
     illustration: '/images/solution/16.riv',
+    social: {
+      feed: '/images/social/feed/16.png',
+      stories: '/images/social/stories/16.png',
+    },
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">

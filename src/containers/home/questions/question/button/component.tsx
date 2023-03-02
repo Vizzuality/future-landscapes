@@ -27,7 +27,7 @@ export const Button: FC<ButtonProps> = ({ className, options, onChange }: Button
             <button
               key={value}
               type="button"
-              className={`shadow-solid-mobile lg:shadow-solid-desktop flex h-[48%] w-full items-center justify-center border-2 border-black font-sans text-xl ${rounded} max-w-[360px] px-14 uppercase active:bg-black active:text-white active:shadow-none lg:max-w-[520px] lg:px-28`}
+              className={`shadow-solid-mobile lg:shadow-solid-desktop flex h-[48%] w-full items-center justify-center border-2 border-black font-sans text-xl ${rounded} max-w-[360px] px-14 uppercase hover:bg-black/5 focus:bg-black focus:text-white focus:shadow-none active:bg-black active:text-white active:shadow-none lg:max-w-[520px] lg:px-28`}
               onClick={() => handleClick(value)}
             >
               {label}

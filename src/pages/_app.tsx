@@ -67,7 +67,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       <QueryClientProvider client={queryClient}>
         <Hydrate state={pageProps.dehydratedState}>
           <OverlayProvider>
-            {/* @ts-ignore: https://github.com/artsy/fresnel/issues/281 */}
             <MediaContextProvider>
               <Layout>
                 <ThirdParty />

@@ -1,6 +1,7 @@
+import { useRouter } from 'next/router';
+
 import { playingAtom } from 'store/playing';
 import { solutionsAtom } from 'store/solutions';
-import { stepAtom } from 'store/step';
 
 import { useAtom } from 'jotai';
 
@@ -11,7 +12,7 @@ import Questions from './questions';
 import Solution from './solution';
 
 const Footer = () => {
-  const [step] = useAtom(stepAtom);
+  const { query } = useRouter();
 
   const [playing] = useAtom(playingAtom);
   const [solutions] = useAtom(solutionsAtom);
@@ -25,9 +26,9 @@ const Footer = () => {
           'justify-center': playing && solutions,
         })}
       >
-        {!playing && <Hero />}
-        {playing && !solutions && <Questions />}
-        {playing && solutions && <Solution />}
+        {!query.slug && !playing && !solutions && <Hero />}
+        {!query.slug && playing && !solutions && <Questions />}
+        {query.slug && <Solution />}
       </div>
     </footer>
   );

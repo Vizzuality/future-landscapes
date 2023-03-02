@@ -36,7 +36,7 @@ const Solution = () => {
   const { isOpen: isModalOpen, open: openModal, close: closeModal } = useModal();
 
   const solution = SOLUTIONS.find((s) => s.slug === query.slug);
-  const { illustration, title, content, pdf_desktop, pdf_mobile, projects } = solution;
+  const { social, illustration, title, content, pdf_desktop, pdf_mobile, projects } = solution;
   const projectsArray = PROJECTS.filter((p) => projects.includes(p.id));
 
   const FORMATED_CARDS = useMemo(() => {
@@ -64,8 +64,8 @@ const Solution = () => {
         </a>
       </div>
       <div className="grid grid-cols-12 items-center gap-10 p-4 pb-10 lg:gap-7 lg:p-8 lg:pb-0">
-        <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2 lg:flex-row">
-          <div className="relative col-span-12 w-full lg:col-span-7">
+        <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2">
+          <div className="relative col-span-12 w-full place-self-start overflow-hidden lg:col-span-7">
             <a
               href={pdf_desktop}
               rel="noreferrer noopener"
@@ -75,14 +75,10 @@ const Solution = () => {
               <Icon icon={DOWNLOAD_SVG} className="h-8 w-8 text-white" />
             </a>
 
-            <RiveComponent
-              imageUrl={illustration}
-              autoplay
-              className="h-[580px] w-full lg:h-[760px]"
-            />
+            <RiveComponent imageUrl={illustration} autoplay className="aspect-[528/848]" />
           </div>
 
-          <div className="col-span-12 space-y-4 bg-black p-3 font-sans text-white lg:col-span-5">
+          <div className="col-span-12 space-y-4 bg-black p-3 font-sans text-white lg:col-span-5 lg:p-4">
             <p className="text-xl font-semibold">{title}</p>
             {content}
           </div>
@@ -99,47 +95,45 @@ const Solution = () => {
             </p>
           </div>
 
-          <div className="w-full">
-            <Media lessThan="sm" className="flex flex-col items-center space-y-8">
-              <Button theme="primary-alt" size="xl" onClick={openModal}>
-                Share
-              </Button>
+          <Media lessThan="sm" className="flex w-full flex-col items-center space-y-8">
+            <Button theme="primary-alt" size="xl" onClick={openModal}>
+              Share
+            </Button>
 
-              <a
-                href={pdf_desktop}
-                rel="noreferrer noopener"
-                target="_blank"
-                className="flex items-end space-x-3 hover:bg-black/10"
-              >
-                <p className="text-base font-semibold"> Save Results</p>
-                <Icon icon={DOWNLOAD_SVG} className="h-7 w-7" />
-              </a>
-            </Media>
-
-            <Media
-              greaterThanOrEqual="sm"
-              className="flex flex-row items-center justify-end space-x-4"
+            <a
+              href={pdf_desktop}
+              rel="noreferrer noopener"
+              target="_blank"
+              className="flex items-end space-x-3 hover:bg-black/10"
             >
-              <a
-                href={pdf_desktop}
-                rel="noreferrer noopener"
-                target="_blank"
-                className="pr-4 hover:bg-black/10"
-              >
-                <p className="text-base font-semibold"> Save Results</p>
-              </a>
+              <p className="text-base font-semibold"> Save Results</p>
+              <Icon icon={DOWNLOAD_SVG} className="h-7 w-7" />
+            </a>
+          </Media>
 
-              <Link href="/">
-                <Button theme="primary-alt" size="base" onClick={resetToPlay}>
-                  Play Again
-                </Button>
-              </Link>
+          <Media
+            greaterThanOrEqual="sm"
+            className="flex w-full flex-row items-center justify-end space-x-4"
+          >
+            <a
+              href={pdf_desktop}
+              rel="noreferrer noopener"
+              target="_blank"
+              className="pr-4 hover:bg-black/10"
+            >
+              <p className="text-base font-semibold"> Save Results</p>
+            </a>
 
-              <Button theme="primary-alt" size="base" onClick={openModal}>
-                Share
+            <Link href="/">
+              <Button theme="primary-alt" size="base" onClick={resetToPlay}>
+                Play Again
               </Button>
-            </Media>
-          </div>
+            </Link>
+
+            <Button theme="primary-alt" size="base" onClick={openModal}>
+              Share
+            </Button>
+          </Media>
 
           <div
             className="h-3 w-full bg-repeat"
@@ -215,7 +209,7 @@ const Solution = () => {
               </Link>
 
               <a
-                href={pdf_desktop}
+                href={pdf_mobile}
                 rel="noreferrer noopener"
                 target="_blank"
                 className="flex items-end space-x-3 hover:bg-black/10"

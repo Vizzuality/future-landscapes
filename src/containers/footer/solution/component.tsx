@@ -1,11 +1,5 @@
-import { readWriteStepAtom } from 'store/step';
-
-import { LayoutGroup, motion } from 'framer-motion';
-import { useAtom } from 'jotai';
-
 import Icon from 'components/icon';
 import { Media } from 'components/media-query';
-import cn from 'lib/classnames';
 
 import INSTA_SVG from 'svgs/social/insta.svg?sprite';
 import LINKEDIN_SVG from 'svgs/social/linkedin.svg?sprite';
