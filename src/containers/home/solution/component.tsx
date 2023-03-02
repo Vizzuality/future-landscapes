@@ -36,7 +36,8 @@ const Solution = () => {
   const { isOpen: isModalOpen, open: openModal, close: closeModal } = useModal();
 
   const solution = SOLUTIONS.find((s) => s.slug === query.slug);
-  const { social, illustration, title, content, pdf_desktop, pdf_mobile, projects } = solution;
+  const { social, slug, illustration, title, content, pdf_desktop, pdf_mobile, projects } =
+    solution;
   const projectsArray = PROJECTS.filter((p) => projects.includes(p.id));
 
   const FORMATED_CARDS = useMemo(() => {
@@ -67,7 +68,8 @@ const Solution = () => {
         <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2">
           <div className="relative col-span-12 w-full place-self-start overflow-hidden lg:col-span-7">
             <a
-              href={pdf_desktop}
+              href={social.feed}
+              download={`${slug}.png`}
               rel="noreferrer noopener"
               target="_blank"
               className="absolute top-2 right-2 flex h-16 w-16 items-center justify-center rounded-full bg-black hover:bg-black/10"
