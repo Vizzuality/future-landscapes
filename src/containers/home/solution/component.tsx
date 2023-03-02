@@ -64,7 +64,7 @@ const Solution = () => {
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-7 lg:w-32" />
         </a>
       </div>
-      <div className="grid grid-cols-12 items-center gap-10 p-4 pb-10 lg:gap-7 lg:p-8 lg:pb-0">
+      <div className="grid grid-cols-12 items-center p-4 pb-10 lg:gap-7 lg:p-8 lg:pb-0">
         <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2">
           <div className="relative col-span-12 w-full place-self-start overflow-hidden lg:col-span-7">
             <a
@@ -77,7 +77,7 @@ const Solution = () => {
               <Icon icon={DOWNLOAD_SVG} className="h-8 w-8 text-white" />
             </a>
 
-            <RiveComponent imageUrl={illustration} autoplay className="aspect-[528/848]" />
+            <RiveComponent imageUrl={illustration} autoplay className="lg:aspect-[528/848]" />
           </div>
 
           <div className="col-span-12 space-y-4 bg-black p-3 font-sans text-white lg:col-span-5 lg:p-4">

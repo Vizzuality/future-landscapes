@@ -31,7 +31,7 @@ export const QUESTIONS = [
     id: 1,
     name: 'a',
     question: (
-      <p className="font-sans text-3xl">
+      <p className="font-sans text-2xl lg:text-3xl">
         Which sustainability <b className="font-bold italic">approach</b> do you feel more drawn to?
       </p>
     ),
@@ -50,7 +50,7 @@ export const QUESTIONS = [
     id: 2,
     name: 'b',
     question: (
-      <p className="font-sans text-3xl">
+      <p className="font-sans text-2xl lg:text-3xl">
         Which sustainability <b className="font-bold italic">measure</b> are you more interested in?
       </p>
     ),
@@ -70,7 +70,7 @@ export const QUESTIONS = [
     name: 'c',
 
     question: (
-      <p className="font-sans text-3xl">
+      <p className="font-sans text-2xl lg:text-3xl">
         What area do you feel more connected to <b className="font-bold italic">improving</b>?
       </p>
     ),
@@ -99,7 +99,7 @@ export const QUESTIONS = [
     id: 4,
     name: 'd',
     question: (
-      <p className="font-sans text-3xl">
+      <p className="font-sans text-2xl lg:text-3xl">
         What would you prioritise for <b className="font-bold italic">investment</b>?
       </p>
     ),
