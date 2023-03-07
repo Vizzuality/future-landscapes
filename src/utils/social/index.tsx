@@ -4,7 +4,7 @@ const TWITTER = 'https://twitter.com/intent/tweet';
 
 const LINKEDIN = 'https://www.linkedin.com/shareArticle';
 
-export const useSocialMediaShare = ({ social, url, caption }: UseSocialMediaShare) => {
+export const socialMediaShare = ({ social, url, caption }: UseSocialMediaShare) => {
   if (social === 'twitter') {
     const link = `${TWITTER}?url=${url}&text=${caption}`;
     return link;

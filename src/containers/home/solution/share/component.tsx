@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import { useSocialMediaShare } from 'hooks/social';
-
 import Icon from 'components/icon';
+import { socialMediaShare } from 'utils/social';
 
 import LINK_SVG from 'svgs/social/link.svg?sprite';
 import LINKEDIN_SVG from 'svgs/social/linkedin.svg?sprite';
@@ -29,7 +28,7 @@ const ShareContent = () => {
 
       <div className="flex justify-center space-x-10 text-xs">
         <a
-          href={useSocialMediaShare({
+          href={socialMediaShare({
             social: 'twitter',
             url: `${process.env.NEXT_PUBLIC_BASE_PATH}${asPath}`,
             caption:
@@ -43,9 +42,9 @@ const ShareContent = () => {
           <p>Twitter</p>
         </a>
         <a
-          href={useSocialMediaShare({
+          href={socialMediaShare({
             social: 'linkedin',
-            url: `http://future-landscapes.vizzuality.com${asPath}`,
+            url: `${process.env.NEXT_PUBLIC_BASE_PATH}${asPath}`,
             caption:
               'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours turn out like? Find out at http://future-landscapes.vizzuality.com/',
           })}

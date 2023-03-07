@@ -106,7 +106,7 @@ const Solution = () => {
               href={pdf_desktop}
               rel="noreferrer noopener"
               target="_blank"
-              className="flex items-end space-x-3 hover:bg-black/10"
+              className="flex items-end space-x-3 hover:bg-white"
             >
               <p className="text-base font-semibold"> Save Results</p>
               <Icon icon={DOWNLOAD_SVG} className="h-7 w-7" />
