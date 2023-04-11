@@ -24,12 +24,12 @@ const CristalBall = forwardRef<HTMLDivElement>((_, ref) => {
           ref={ref}
           className="flex h-screen w-full flex-col items-center justify-center space-y-10 bg-black text-center text-white"
         >
-          <div className="h-52 w-52">
+          <div className="h-60 w-60 lg:h-80 lg:w-80">
             <RiveBallComponent />
           </div>
 
           <p className="text-white">Creating your Future Landscape</p>
-          <p>{count}</p>
+          <p>{`(${count})`}</p>
         </div>
       </div>
     </>

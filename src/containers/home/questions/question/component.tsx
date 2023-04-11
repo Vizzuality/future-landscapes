@@ -2,17 +2,12 @@ import { forwardRef, useCallback } from 'react';
 
 import { Field as FieldRFF, useForm } from 'react-final-form';
 
-import { readWritePlayingAtom } from 'store/playing';
-import { readWriteDirectionAtom } from 'store/slider';
 import { readWriteSolutionsAtom } from 'store/solutions';
 import { readWriteStepAtom } from 'store/step';
 
 import { useAtom } from 'jotai';
 
 import { composeValidators } from 'components/forms/validations';
-import Icon from 'components/icon';
-
-import CLOSE_SVG from 'svgs/ui/close.svg?sprite';
 
 import { QUESTIONS } from '../constants';
 
@@ -26,9 +21,7 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
   const form = useForm();
 
   const [step, setStep] = useAtom(readWriteStepAtom);
-  const [, setDirection] = useAtom(readWriteDirectionAtom);
   const [, setSolutions] = useAtom(readWriteSolutionsAtom);
-  const [, setPalying] = useAtom(readWritePlayingAtom);
 
   const { name, question, options } = QUESTIONS.find((q) => q.id === id);
 
@@ -36,7 +29,6 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
     (v) => {
       if (step < 4) {
         setStep(step + 1);
-        setDirection('forward');
         form.change(name, v);
       }
       if (step === 4) {
@@ -49,32 +41,23 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
         setSolutions(`${a}${b}${c}${d}`);
       }
     },
-    [form, name, setDirection, setSolutions, setStep, step]
+    [form, name, setSolutions, setStep, step]
   );
-
-  const resetToPlay = useCallback(() => {
-    setSolutions('');
-    setStep(1);
-    setPalying(false);
-  }, [setPalying, setSolutions, setStep]);
 
   return (
     <div key={id} ref={ref}>
-      <div className="flex h-screen w-screen flex-col items-center space-y-20 overflow-hidden p-4 lg:flex-row lg:justify-center lg:space-x-4">
-        <div className="w-full max-w-lg space-y-4">
-          <div className="flex justify-between">
+      <div className="grid h-screen w-screen grid-cols-12 justify-items-center gap-4 overflow-hidden p-4 lg:content-center lg:gap-4">
+        <div className="col-span-12 max-w-lg space-y-4 lg:col-span-4 lg:col-start-3">
+          <div>
             <p className="text-xl font-semibold">
               {`0${id}`}
               <span className="opacity-20"> - 04</span>
             </p>
-            <button type="button" onClick={resetToPlay}>
-              <Icon icon={CLOSE_SVG} className="absolute top-4 right-4 h-6 w-6 lg:h-7 lg:w-7" />
-            </button>
           </div>
 
           {question}
         </div>
-        <div className="space-y-3">
+        <div className="col-span-10 col-start-2 space-y-6 self-start lg:col-span-4 lg:col-end-11 lg:self-auto">
           <FieldRFF name={name} validate={composeValidators([{ presence: true }])}>
             {() => {
               return <Button options={options} onChange={handleOnChange} />;

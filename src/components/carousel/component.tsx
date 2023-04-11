@@ -11,7 +11,8 @@ export const Carousel: React.FC<CarouselProps> = ({
   options = {
     duration: 500,
     circular: false,
-    bound: false,
+    bound: true,
+    align: 'prev',
   },
   ...rest
 }: CarouselProps) => {

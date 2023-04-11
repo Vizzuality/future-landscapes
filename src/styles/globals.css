@@ -35,10 +35,22 @@
   /* multiple bg image pattern */
   .bg-multiple-img {
     background-image: url('/images/background/pattern-top.png'), url('/images/background/pattern-bottom.png');
-    background-size: 40%, 40%;
+    background-size: 25%, 25%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: left top, right bottom;
+  }
+
+  .shadow-solid-mobile {
+    box-shadow: 0px 4px 0px black;
+  }
+
+  .shadow-solid-desktop {
+    box-shadow: 0px 12px 0px black;
+  }
+
+  .shadow-solid-card-d {
+    box-shadow: 8px 8px #FFD954;
   }
 
   @supports (backdrop-filter: blur(4px)) {
