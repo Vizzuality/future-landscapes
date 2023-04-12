@@ -13,10 +13,6 @@ import { useAtom } from 'jotai';
 
 import Background from 'containers/background';
 
-import Icon from 'components/icon';
-
-import CLOSE_SVG from 'svgs/ui/close.svg?sprite';
-
 import { SOLUTIONS } from '../solution/constants';
 
 import { COLORS, QUESTIONS } from './constants';
@@ -62,8 +58,12 @@ const Questions = () => {
     <FormRFF onSubmit={handleSubmit} initialValues={INITIAL_VALUES}>
       {(fprops) => (
         <Background color={bgColor} step={step}>
-          <button type="button" onClick={resetToPlay} className="absolute top-4 right-4 z-10">
-            <Icon icon={CLOSE_SVG} className="h-6 w-6 lg:h-7 lg:w-7" />
+          <button
+            type="button"
+            onClick={resetToPlay}
+            className="absolute top-4 right-4 z-10 font-semibold underline underline-offset-2"
+          >
+            Close
           </button>
           <form onSubmit={fprops.handleSubmit} autoComplete="off" className="h-full">
             <AnimatePresence>

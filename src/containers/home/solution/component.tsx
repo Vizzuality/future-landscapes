@@ -12,6 +12,8 @@ import { useAtom } from 'jotai';
 
 import { useModal } from 'hooks/modals';
 
+import Background from 'containers/background';
+
 import Button from 'components/button';
 import Carousel from 'components/carousel';
 import Icon from 'components/icon';
@@ -59,38 +61,41 @@ const Solution = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center pt-4 lg:hidden">
+      <div className="flex flex-col items-center pt-4 pl-4 lg:items-start">
         <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
-          <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-7 lg:w-32" />
+          <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-6 lg:w-24" />
         </a>
       </div>
-      <div className="grid grid-cols-12 items-center p-4 pb-10 lg:gap-7 lg:p-8 lg:pb-0">
-        <div className="col-span-12 grid h-full grid-cols-12 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2">
-          <div className="relative col-span-12 w-full place-self-start overflow-hidden lg:col-span-7">
+      <div className="grid grid-cols-12 items-center p-4 pb-10 lg:gap-7 lg:p-8">
+        <div className="col-span-12 grid h-full grid-cols-1 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2 lg:grid-cols-12">
+          <div className="relative w-full place-self-start overflow-hidden lg:col-span-7">
             <a
-              href={social.feed}
+              href={social.solution}
               download={`${slug}.png`}
               rel="noreferrer noopener"
               target="_blank"
-              className="absolute top-2 right-2 flex h-16 w-16 items-center justify-center rounded-full bg-black hover:bg-black/10"
+              className="absolute top-2 right-2 flex h-14 w-14 items-center justify-center rounded-full bg-black hover:bg-black/10"
             >
-              <Icon icon={DOWNLOAD_SVG} className="h-8 w-8 text-white" />
+              <Icon icon={DOWNLOAD_SVG} className="h-6 w-6 text-white" />
             </a>
 
-            <RiveComponent imageUrl={illustration} autoplay className="lg:aspect-[528/848]" />
+            <RiveComponent imageUrl={illustration} autoplay className="aspect-[528/848]" />
           </div>
 
-          <div className="col-span-12 space-y-4 bg-black p-3 font-sans text-white lg:col-span-5 lg:p-4">
+          <div className="space-y-4 bg-black p-3 font-sans text-white lg:col-span-5 lg:p-4">
             <p className="text-xl font-semibold">{title}</p>
             {content}
           </div>
         </div>
 
-        <div className="col-span-12 flex h-full w-full flex-col items-center space-y-10 pt-6 pb-6 lg:col-span-4 lg:col-end-12 lg:space-y-8">
-          <div className="space-y-4 font-sans text-lg lg:text-base">
+        <div className="col-span-12 flex h-full w-full flex-col items-center space-y-10 pt-6 pb-6 lg:col-span-4 lg:col-end-12 lg:justify-center lg:space-y-8">
+          <div className="space-y-4 font-sans text-lg lg:space-y-6 lg:text-base">
+            <p className="lg:font-display lg:text-3xl">
+              Your choices have created your variation of our shared future landscape.
+            </p>
             <p>
-              Your choices have created your variation of our shared future landscape. Together, all
-              these visions will help us shape a sustainable future and a better world.
+              Together, all these visions will help us shape a sustainable future and a better
+              world.
             </p>
             <p>
               Curious to see what your friends envision? Share your picture with them and find out!
@@ -113,19 +118,7 @@ const Solution = () => {
             </a>
           </Media>
 
-          <Media
-            greaterThanOrEqual="sm"
-            className="flex w-full flex-row items-center justify-end space-x-4"
-          >
-            <a
-              href={pdf_desktop}
-              rel="noreferrer noopener"
-              target="_blank"
-              className="pr-4 hover:bg-black/10"
-            >
-              <p className="text-base font-semibold"> Save Results</p>
-            </a>
-
+          <Media greaterThanOrEqual="sm" className="flex w-full flex-row items-center space-x-6">
             <Link href="/">
               <Button theme="primary-alt" size="base" onClick={resetToPlay}>
                 Play Again
@@ -135,67 +128,76 @@ const Solution = () => {
             <Button theme="primary-alt" size="base" onClick={openModal}>
               Share
             </Button>
+
+            <a
+              href={pdf_desktop}
+              rel="noreferrer noopener"
+              target="_blank"
+              className="pr-4 hover:bg-black/10"
+            >
+              <p className="text-base font-semibold underline underline-offset-2"> Save Results</p>
+            </a>
           </Media>
 
-          <div
-            className="h-3 w-full bg-repeat"
-            style={{ backgroundImage: 'url(/images/solution/divider.png)' }}
-          />
-
-          <div className="space-y-4 font-sans text-lg lg:text-base">
-            <p className="lg:text-xl lg:font-semibold">
-              Thank you for imagining with us. Now, how do we get to that better future?
-            </p>
-            <p>
-              At <b>vizzuality</b>, we aim to turn vision into reality by working at the
-              intersection of digital and sustainable transformation.
-            </p>
-            <p>
-              Here are some projects that will interest you based on your answers. Feel free to
-              explore now or save them for later.
-            </p>
-          </div>
-
-          <div className="w-full space-y-6 overflow-hidden">
-            <Carousel
-              slide={slide}
-              slides={FORMATED_CARDS}
-              autoplay={0}
-              onChange={(i) => {
-                setSlide(i);
-              }}
+          <Media lessThan="sm" className="w-full space-y-8">
+            <div
+              className="h-3 w-full bg-repeat"
+              style={{ backgroundImage: 'url(/images/solution/divider.png)' }}
             />
 
-            <div className="relative flex grow justify-center space-x-3">
-              <LayoutGroup>
-                {FORMATED_CARDS.map((c, i) => {
-                  return (
-                    <motion.button
-                      key={c.id}
-                      type="button"
-                      aria-label="progress-dot"
-                      className={cn({
-                        'relative block h-2 w-2 rounded-full bg-black': true,
-                      })}
-                      initial={{
-                        opacity: 1,
-                        width: 8,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        width: i === slide ? 40 : 8,
-                      }}
-                      onClick={() => {
-                        setSlide(i);
-                      }}
-                    />
-                  );
-                })}
-              </LayoutGroup>
+            <div className="space-y-4 font-sans text-lg">
+              <p className="font-bold">
+                Thank you for imagining with us. Now, how do we get to that better future?
+              </p>
+              <p>
+                At <b>vizzuality</b>, we aim to turn vision into reality by working at the
+                intersection of digital and sustainable transformation.
+              </p>
+              <p>
+                Here are some projects that will interest you based on your answers. Feel free to
+                explore now or save them for later.
+              </p>
             </div>
-          </div>
 
-          <Media lessThan="sm" className="w-full">
+            <div className="w-full space-y-6 overflow-hidden">
+              <Carousel
+                slide={slide}
+                slides={FORMATED_CARDS}
+                autoplay={0}
+                onChange={(i) => {
+                  setSlide(i);
+                }}
+              />
+
+              <div className="relative flex grow justify-center space-x-3">
+                <LayoutGroup>
+                  {FORMATED_CARDS.map((c, i) => {
+                    return (
+                      <motion.button
+                        key={c.id}
+                        type="button"
+                        aria-label="progress-dot"
+                        className={cn({
+                          'relative block h-2 w-2 rounded-full bg-black': true,
+                        })}
+                        initial={{
+                          opacity: 1,
+                          width: 8,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          width: i === slide ? 40 : 8,
+                        }}
+                        onClick={() => {
+                          setSlide(i);
+                        }}
+                      />
+                    );
+                  })}
+                </LayoutGroup>
+              </div>
+            </div>
+
             <div
               className="h-3 w-full bg-repeat"
               style={{ backgroundImage: 'url(/images/solution/divider.png)' }}
@@ -223,6 +225,33 @@ const Solution = () => {
           </Media>
         </div>
       </div>
+      <Media greaterThanOrEqual="sm" className="space-y-10">
+        <div className="bg-[url('/images/background/solutions-pattern.jpg')]">
+          <div className="grid grid-cols-12 gap-7 pt-28 text-white">
+            <div className="col-span-4 col-start-2 space-y-4">
+              <p className="max-w-lg font-display text-3xl">
+                Thank you for imagining with us. Now, how do we get to that better future?
+              </p>
+              <p>
+                At <b>vizzuality</b>, we aim to turn vision into reality by working at the
+                intersection of digital and sustainable transformation.
+              </p>
+            </div>
+
+            <div className="col-span-4 col-end-10 flex items-end">
+              <p>
+                Here are some projects that will interest you based on your answers. Feel free to
+                explore now or save them for later.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center pt-7 pb-28">
+            {FORMATED_CARDS.map(({ id, content }) => {
+              return <div key={id}>{content}</div>;
+            })}
+          </div>
+        </div>
+      </Media>
 
       <Modal
         size="s"

@@ -6,6 +6,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/01.png',
       stories: '/images/social/stories/01.png',
+      solution: '/images/social/solution/01.png',
     },
     title: 'Adaptation Encyclopedia',
     pdf_desktop: '/docs/desktop/01_Future Landscape.pdf',
@@ -34,6 +35,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/02.png',
       stories: '/images/social/stories/02.png',
+      solution: '/images/social/solution/02.png',
     },
     pdf_desktop: '/docs/desktop/02_Future Landscape.pdf',
     pdf_mobile: '/docs/mobile/02_Future Landscape.pdf',
@@ -63,6 +65,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/03.png',
       stories: '/images/social/stories/03.png',
+      solution: '/images/social/solution/03.png',
     },
     content: (
       <>
@@ -90,6 +93,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/04.png',
       stories: '/images/social/stories/04.png',
+      solution: '/images/social/solution/04.png',
     },
     content: (
       <>
@@ -117,6 +121,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/05.png',
       stories: '/images/social/stories/05.png',
+      solution: '/images/social/solution/05.png',
     },
     content: (
       <>
@@ -144,6 +149,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/06.png',
       stories: '/images/social/stories/06.png',
+      solution: '/images/social/solution/06.png',
     },
     content: (
       <>
@@ -172,6 +178,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/07.png',
       stories: '/images/social/stories/07.png',
+      solution: '/images/social/solution/07.png',
     },
     content: (
       <>
@@ -200,6 +207,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/08.png',
       stories: '/images/social/stories/08.png',
+      solution: '/images/social/solution/08.png',
     },
     content: (
       <>
@@ -227,6 +235,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/09.png',
       stories: '/images/social/stories/09.png',
+      solution: '/images/social/solution/09.png',
     },
     content: (
       <>
@@ -254,6 +263,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/10.png',
       stories: '/images/social/stories/10.png',
+      solution: '/images/social/solution/10.png',
     },
     content: (
       <>
@@ -282,6 +292,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/11.png',
       stories: '/images/social/stories/11.png',
+      solution: '/images/social/solution/11.png',
     },
     content: (
       <>
@@ -309,6 +320,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/12.png',
       stories: '/images/social/stories/12.png',
+      solution: '/images/social/solution/12.png',
     },
     content: (
       <>
@@ -336,6 +348,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/13.png',
       stories: '/images/social/stories/13.png',
+      solution: '/images/social/solution/13.png',
     },
     content: (
       <>
@@ -363,6 +376,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/14.png',
       stories: '/images/social/stories/14.png',
+      solution: '/images/social/solution/14.png',
     },
     content: (
       <>
@@ -391,6 +405,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/15.png',
       stories: '/images/social/stories/15.png',
+      solution: '/images/social/solution/15.png',
     },
     content: (
       <>
@@ -418,6 +433,7 @@ export const SOLUTIONS = [
     social: {
       feed: '/images/social/feed/16.png',
       stories: '/images/social/stories/16.png',
+      solution: '/images/social/solution/16.png',
     },
     content: (
       <>

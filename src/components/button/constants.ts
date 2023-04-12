@@ -2,7 +2,7 @@ export const THEME = {
   primary:
     'text-black font-semibold bg-yellow-100 hover:bg-yellow-200 border active:border-b active:bg-yellow-100',
   'primary-alt':
-    'text-black font-semibold bg-white hover:bg-black/70 active:border-b active:bg-white focus:border-b focus:bg-white',
+    'text-black font-semibold bg-white hover:bg-[#eeeeee] active:border-b active:bg-white focus:border-b focus:bg-white',
 
   secondary: 'text-black font-semibold bg-white hover:bg-black/10 active:border active:bg-white',
   'secondary-alt':

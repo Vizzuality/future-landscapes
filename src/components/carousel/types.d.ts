@@ -10,4 +10,5 @@ export interface CarouselProps extends Partial<FlickingProps> {
   }[];
   autoplay?: boolean | number;
   options?: Partial<FlickingOptions>;
+  onChange?: (slide: number) => void;
 }
