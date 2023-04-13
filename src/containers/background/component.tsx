@@ -2,7 +2,6 @@ import { playingAtom } from 'store/playing';
 
 import { useAtom } from 'jotai';
 
-import { Media } from 'components/media-query';
 import RiveComponent from 'components/rive-component';
 import cn from 'lib/classnames';
 
@@ -21,11 +20,11 @@ export const Background: React.FC<BackgroundProps> = ({
       className={cn({
         'h-full w-full overflow-hidden transition-colors': true,
         [color]: color,
-        'lg:bg-multiple-img': step !== 0,
+        'lg:bg-multiple-img': step !== 0 && step <= 4,
       })}
     >
       {!playing &&
-        step !== 4 &&
+        step === 0 &&
         STARS_0.map((s) => (
           <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
         ))}
@@ -36,7 +35,7 @@ export const Background: React.FC<BackgroundProps> = ({
           <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
         ))}
 
-      {step === 4 &&
+      {step === 5 &&
         STARS_4.map((s) => (
           <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
         ))}

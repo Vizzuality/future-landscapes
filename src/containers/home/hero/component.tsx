@@ -35,7 +35,7 @@ const Hero = () => {
             <h1 className="font-display text-5xl lg:text-6xl">
               What&apos;s your sustainable vision?
             </h1>
-            <h2 className="text-xl lg:text-2xl">Let&apos;s paint it into a picture.</h2>
+            <h2 className="text-lg lg:text-xl">Let&apos;s paint it into a picture.</h2>
             <Button theme="primary" size="xl" onClick={() => setPlaying(true)}>
               Start quiz
             </Button>

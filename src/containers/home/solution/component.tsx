@@ -22,6 +22,11 @@ import Modal from 'components/modal';
 import RiveComponent from 'components/rive-component';
 import cn from 'lib/classnames';
 
+import INSTA_SVG from 'svgs/social/insta.svg?sprite';
+import LINKEDIN_SVG from 'svgs/social/linkedin.svg?sprite';
+import TWITTER_SVG from 'svgs/social/twitter.svg?sprite';
+import WEB_SVG from 'svgs/social/web.svg?sprite';
+import ARROW_DOWN_SVG from 'svgs/ui/arrow-down.svg?sprite';
 import DOWNLOAD_SVG from 'svgs/ui/download.svg?sprite';
 import VIZZ_SVG from 'svgs/ui/vizzuality.svg?sprite';
 
@@ -43,10 +48,10 @@ const Solution = () => {
   const projectsArray = PROJECTS.filter((p) => projects.includes(p.id));
 
   const FORMATED_CARDS = useMemo(() => {
-    const cards = projectsArray.map((p) => {
+    const cards = projectsArray.map((p, i) => {
       return {
         id: p.id,
-        content: <ProjectCard {...p} />,
+        content: <ProjectCard keyIndex={i} {...p} />,
       };
     });
 
@@ -61,12 +66,33 @@ const Solution = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center pt-4 pl-4 lg:items-start">
+      <div className="flex flex-col items-center pt-4 pl-4 lg:flex-row lg:justify-between">
         <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-6 lg:w-24" />
         </a>
+        <div className="flex space-x-11 lg:space-x-6">
+          <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+            <Icon icon={WEB_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+          </a>
+          <a href="https://bit.ly/3fTtKQ5" target="_blank" rel="noopener noreferrer">
+            <Icon icon={TWITTER_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+          </a>
+          <a href="https://bit.ly/3UMCd6D" target="_blank" rel="noopener noreferrer">
+            <Icon icon={INSTA_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+          </a>
+          <a href=" https://bit.ly/3Ux6h6A" target="_blank" rel="noopener noreferrer">
+            <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+          </a>
+        </div>
       </div>
-      <div className="grid grid-cols-12 items-center p-4 pb-10 lg:gap-7 lg:p-8">
+      <div className="relative grid grid-cols-12 items-center p-4 pb-10 lg:gap-7 lg:p-8">
+        <Media
+          greaterThanOrEqual="sm"
+          className="absolute bottom-10 right-2 flex flex-col items-center space-y-8"
+        >
+          <p className="-rotate-90 text-xs uppercase">scroll</p>
+          <Icon icon={ARROW_DOWN_SVG} className="h-4 w-4 animate-bounce" />
+        </Media>
         <div className="col-span-12 grid h-full grid-cols-1 overflow-hidden rounded-3xl border-2 lg:col-span-6 lg:col-start-2 lg:grid-cols-12">
           <div className="relative w-full place-self-start overflow-hidden lg:col-span-7">
             <a
@@ -74,9 +100,9 @@ const Solution = () => {
               download={`${slug}.png`}
               rel="noreferrer noopener"
               target="_blank"
-              className="absolute top-2 right-2 flex h-14 w-14 items-center justify-center rounded-full bg-black hover:bg-black/10"
+              className="absolute top-2 right-2 flex h-14 w-14 items-center justify-center rounded-full border-2 bg-black hover:bg-white"
             >
-              <Icon icon={DOWNLOAD_SVG} className="h-6 w-6 text-white" />
+              <Icon icon={DOWNLOAD_SVG} className="h-6 w-6 text-white hover:text-black" />
             </a>
 
             <RiveComponent imageUrl={illustration} autoplay className="aspect-[528/848]" />
@@ -129,17 +155,15 @@ const Solution = () => {
               Share
             </Button>
 
-            <a
-              href={pdf_desktop}
-              rel="noreferrer noopener"
-              target="_blank"
-              className="pr-4 hover:bg-black/10"
-            >
-              <p className="text-base font-semibold underline underline-offset-2"> Save Results</p>
+            <a href={pdf_desktop} rel="noreferrer noopener" target="_blank" className="pr-4">
+              <p className="text-base font-semibold underline underline-offset-2 hover:no-underline">
+                {' '}
+                Save Results
+              </p>
             </a>
           </Media>
 
-          <Media lessThan="sm" className="w-full space-y-8">
+          <Media lessThan="sm" className="w-full">
             <div
               className="h-3 w-full bg-repeat"
               style={{ backgroundImage: 'url(/images/solution/divider.png)' }}
@@ -226,30 +250,33 @@ const Solution = () => {
         </div>
       </div>
       <Media greaterThanOrEqual="sm" className="space-y-10">
-        <div className="bg-[url('/images/background/solutions-pattern.jpg')]">
-          <div className="grid grid-cols-12 gap-7 pt-28 text-white">
-            <div className="col-span-4 col-start-2 space-y-4">
-              <p className="max-w-lg font-display text-3xl">
-                Thank you for imagining with us. Now, how do we get to that better future?
-              </p>
-              <p>
-                At <b>vizzuality</b>, we aim to turn vision into reality by working at the
-                intersection of digital and sustainable transformation.
-              </p>
+        <div className="relative bg-[url('/images/background/solutions-pattern.jpg')]">
+          <Background color="bg-transparent" step={5}>
+            <div className="grid grid-cols-12 gap-7 pt-28 text-white">
+              <div className="col-span-4 col-start-2 space-y-7">
+                <p className="max-w-lg font-display text-3xl">
+                  Thank you for imagining with us. Now, how do we get to that better future?
+                </p>
+                <p>
+                  At <b>vizzuality</b>, we aim to turn vision into reality by working at the
+                  intersection of digital and sustainable transformation.
+                </p>
+              </div>
+
+              <div className="col-span-4 col-end-10 flex items-end">
+                <p>
+                  Here are some projects that will interest you based on your answers. Feel free to
+                  explore now or save them for later.
+                </p>
+              </div>
             </div>
 
-            <div className="col-span-4 col-end-10 flex items-end">
-              <p>
-                Here are some projects that will interest you based on your answers. Feel free to
-                explore now or save them for later.
-              </p>
+            <div className="flex justify-center pt-10 pb-28">
+              {FORMATED_CARDS.map(({ id, content }) => {
+                return <div key={id}>{content}</div>;
+              })}
             </div>
-          </div>
-          <div className="flex justify-center pt-7 pb-28">
-            {FORMATED_CARDS.map(({ id, content }) => {
-              return <div key={id}>{content}</div>;
-            })}
-          </div>
+          </Background>
         </div>
       </Media>
 

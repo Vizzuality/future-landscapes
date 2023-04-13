@@ -53,6 +53,14 @@
     box-shadow: 8px 8px #FFD954;
   }
 
+  .shadow-solid-card-d-blue {
+    box-shadow: 8px 8px #3E8FF7;
+  }
+
+  .shadow-solid-card-d-red {
+    box-shadow: 8px 8px #DC4F5A;
+  }
+
   @supports (backdrop-filter: blur(4px)) {
     .bg-blur {
       @apply bg-opacity-20;
