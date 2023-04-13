@@ -70,20 +70,22 @@ const Solution = () => {
         <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-6 lg:w-24" />
         </a>
-        <div className="flex space-x-11 lg:space-x-6">
-          <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
-            <Icon icon={WEB_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
-          </a>
-          <a href="https://bit.ly/3fTtKQ5" target="_blank" rel="noopener noreferrer">
-            <Icon icon={TWITTER_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
-          </a>
-          <a href="https://bit.ly/3UMCd6D" target="_blank" rel="noopener noreferrer">
-            <Icon icon={INSTA_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
-          </a>
-          <a href=" https://bit.ly/3Ux6h6A" target="_blank" rel="noopener noreferrer">
-            <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
-          </a>
-        </div>
+        <Media greaterThanOrEqual="sm">
+          <div className="flex space-x-11 lg:space-x-6">
+            <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+              <Icon icon={WEB_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+            </a>
+            <a href="https://bit.ly/3fTtKQ5" target="_blank" rel="noopener noreferrer">
+              <Icon icon={TWITTER_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+            </a>
+            <a href="https://bit.ly/3UMCd6D" target="_blank" rel="noopener noreferrer">
+              <Icon icon={INSTA_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+            </a>
+            <a href=" https://bit.ly/3Ux6h6A" target="_blank" rel="noopener noreferrer">
+              <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
+            </a>
+          </div>
+        </Media>
       </div>
 
       <Background color="bg-transparent" step={5}>
@@ -196,7 +198,7 @@ const Solution = () => {
                   }}
                 />
 
-                <div className="relative flex grow justify-center space-x-3">
+                <div className="relative flex grow justify-center space-x-3 pb-4">
                   <LayoutGroup>
                     {FORMATED_CARDS.map((c, i) => {
                       return (
