@@ -6,9 +6,9 @@ import VIZZ_SVG from 'svgs/ui/vizzuality.svg?sprite';
 const AboutContent = () => {
   return (
     <div className="flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
-      <div className="flex items-end justify-center space-x-2">
+      <div className="flex items-end justify-end space-x-2">
         <h1 className="text-xl font-medium">We&apos;re</h1>
-        <Icon icon={VIZZ_SVG} className="h-7 w-20 text-white" />
+        <Icon icon={VIZZ_SVG} className="h-8 w-24 text-white" />
       </div>
       <div className="grow space-y-5 px-10">
         <p>

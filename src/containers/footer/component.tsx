@@ -24,6 +24,7 @@ const Footer = () => {
           'relative z-10 flex w-full items-center bg-transparent p-4 text-base lg:text-xl': true,
           'justify-between': !solutions,
           'justify-center': playing && solutions,
+          'lg:bg-black': query.slug,
         })}
       >
         {!query.slug && !playing && !solutions && <Hero />}

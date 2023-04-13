@@ -14,6 +14,7 @@ export const Carousel: React.FC<CarouselProps> = ({
     bound: true,
     align: 'prev',
   },
+  onChange,
   ...rest
 }: CarouselProps) => {
   const slider = useRef(null);
@@ -85,7 +86,14 @@ export const Carousel: React.FC<CarouselProps> = ({
           setPause(false);
         }}
       >
-        <Flicking ref={slider} {...options} {...rest}>
+        <Flicking
+          ref={slider}
+          onWillChange={({ index }) => {
+            if (onChange) onChange(index);
+          }}
+          {...options}
+          {...rest}
+        >
           {slides.map((sl) => {
             return cloneElement(sl.content, {
               key: sl.id,

@@ -14,7 +14,7 @@ const SolutionPage: React.FC = () => {
   return (
     <div>
       <MetaTags
-        title="Vizzuality | Future Landscapes"
+        title="What is your vission of a sustainable world?"
         description={title}
         type="website"
         imageURL={IMAGE_URL}

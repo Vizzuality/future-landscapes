@@ -1,14 +1,21 @@
 import Head from 'next/head';
 
 import Home from 'containers/home';
+import MetaTags from 'containers/meta-tags';
 
-const HomePage: React.FC = () => (
-  <>
-    <Head>
-      <title>Welcome</title>
-    </Head>
-    <Home />
-  </>
-);
+const HomePage: React.FC = () => {
+  const IMAGE_URL = `${process.env.NEXT_PUBLIC_BASE_PATH}/images/social/feed/01.png`;
+  return (
+    <>
+      <MetaTags
+        title="What is your vission of a sustainable world?"
+        description="Take our quiz to discover your Future Landscape by Vizzuality"
+        type="website"
+        imageURL={IMAGE_URL}
+      />
+      <Home />
+    </>
+  );
+};
 
 export default HomePage;
