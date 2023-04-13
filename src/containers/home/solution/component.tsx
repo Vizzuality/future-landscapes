@@ -66,7 +66,7 @@ const Solution = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center pt-4 pl-4 lg:flex-row lg:justify-between">
+      <div className="flex flex-col items-center px-4 pt-4 lg:flex-row lg:justify-between">
         <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-6 lg:w-24" />
         </a>
