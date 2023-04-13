@@ -64,7 +64,34 @@ export const STARS_QUESTIONS = [
   },
 ];
 
-export const STARS_4 = [
+export const STARS_5 = [
+  {
+    id: 10,
+    src: `/images/background/star2.riv`,
+    autoplay: true,
+    className: 'lg:absolute lg:h-16 lg:w-16 lg:right-1/4 lg:top-20',
+  },
+  {
+    id: 11,
+    src: `/images/background/star2.riv`,
+    autoplay: true,
+    className: 'lg:absolute lg:h-8 lg:w-8 lg:right-1/3 lg:bottom-20',
+  },
+  {
+    id: 12,
+    src: `/images/background/star1.riv`,
+    autoplay: true,
+    className: 'lg:absolute lg:h-10 lg:w-10 lg:left-8 lg:bottom-1/2',
+  },
+  {
+    id: 13,
+    src: `/images/background/star2.riv`,
+    autoplay: true,
+    className: 'lg:absolute lg:h-8 lg:w-8 lg:right-10 lg:top-1/3',
+  },
+];
+
+export const STARS_6 = [
   {
     id: 10,
     src: `/images/background/star2-white.riv`,

@@ -5,7 +5,7 @@ import { useAtom } from 'jotai';
 import RiveComponent from 'components/rive-component';
 import cn from 'lib/classnames';
 
-import { STARS_0, STARS_4, STARS_QUESTIONS } from './constants';
+import { STARS_0, STARS_5, STARS_6, STARS_QUESTIONS } from './constants';
 import type { BackgroundProps } from './types';
 
 export const Background: React.FC<BackgroundProps> = ({
@@ -36,7 +36,12 @@ export const Background: React.FC<BackgroundProps> = ({
         ))}
 
       {step === 5 &&
-        STARS_4.map((s) => (
+        STARS_5.map((s) => (
+          <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
+        ))}
+
+      {step === 6 &&
+        STARS_6.map((s) => (
           <RiveComponent key={s.id} imageUrl={s.src} autoplay className={s.className} />
         ))}
 
