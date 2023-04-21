@@ -17,7 +17,10 @@ const ShareContent = () => {
   const solution = SOLUTIONS.find((s) => s.slug === query.slug);
   const { social, title, slug } = solution;
 
-  const sendAnalyticsEvent = (params: { method: 'Twitter' | 'Linkedin'; item_id: string }) => {
+  const sendAnalyticsEvent = (params: {
+    method: 'Twitter' | 'Linkedin' | 'Link';
+    item_id: string;
+  }) => {
     GAEvent({
       action: 'share',
       params: {
@@ -76,6 +79,8 @@ const ShareContent = () => {
               .catch(() => {
                 console.error();
               });
+
+            sendAnalyticsEvent({ method: 'Link', item_id: slug });
           }}
           className="flex flex-col items-center space-y-2 hover:text-grey focus:text-grey"
         >

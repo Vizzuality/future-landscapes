@@ -16,11 +16,11 @@ const AboutContent = () => {
           that look like?
         </p>
         <p>
-          Everyone&apos;s vission of sustainability looks different. We want to honour that. Through
-          all these vissions, we&apos;ll create a world that supports us all.
+          Everyone&apos;s vision of sustainability looks different. We want to honour that. Through
+          all these visions, we&apos;ll create a world that supports us all.
         </p>
         <p>
-          We&apos;ve made you a short quiz to paint your vission. Have fun, and go with your gut!
+          We&apos;ve made you a short quiz to paint your vision. Have fun, and go with your gut!
         </p>
         <p>We hope you enjoy it.</p>
       </div>
