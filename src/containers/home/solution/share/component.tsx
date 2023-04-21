@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import Icon from 'components/icon';
+import { GAEvent } from 'lib/analytics/ga';
 import { socialMediaShare } from 'utils/social';
 
 import LINK_SVG from 'svgs/social/link.svg?sprite';
@@ -14,7 +15,17 @@ const ShareContent = () => {
   const { query, asPath } = useRouter();
 
   const solution = SOLUTIONS.find((s) => s.slug === query.slug);
-  const { social, title } = solution;
+  const { social, title, slug } = solution;
+
+  const sendAnalyticsEvent = (params: { method: 'Twitter' | 'Linkedin'; item_id: string }) => {
+    GAEvent({
+      action: 'share',
+      params: {
+        ...params,
+        content_type: 'url',
+      },
+    });
+  };
 
   return (
     <div className="flex grow flex-col items-center space-y-5 overflow-auto py-10 text-center font-sans">
@@ -37,6 +48,7 @@ const ShareContent = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center space-y-2"
+          onClick={() => sendAnalyticsEvent({ method: 'Twitter', item_id: slug })}
         >
           <Icon icon={TWITTER_SVG} className="h-8 w-8 text-white lg:h-7 lg:w-7" />
           <p>Twitter</p>
@@ -51,15 +63,20 @@ const ShareContent = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center space-y-2"
+          onClick={() => sendAnalyticsEvent({ method: 'Linkedin', item_id: slug })}
         >
           <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-white lg:h-7 lg:w-7" />
           <p>Linkedin</p>
         </a>
         <button
           type="button"
-          onClick={() =>
-            navigator.clipboard.writeText(`http://future-landscapes.vizzuality.com${asPath}`)
-          }
+          onClick={() => {
+            navigator.clipboard
+              .writeText(`http://future-landscapes.vizzuality.com${asPath}`)
+              .catch(() => {
+                console.error();
+              });
+          }}
           className="flex flex-col items-center space-y-2 hover:text-grey focus:text-grey"
         >
           <Icon
