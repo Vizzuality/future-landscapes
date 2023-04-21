@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Home from 'containers/home';
 import MetaTags from 'containers/meta-tags';
 
@@ -8,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <MetaTags
-        title="What is your vission of a sustainable world?"
+        title="Future Landscapes | Vizzuality"
         description="Take our quiz to discover your Future Landscape by Vizzuality"
         type="website"
         imageURL={IMAGE_URL}

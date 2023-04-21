@@ -33,7 +33,7 @@ const Hero = () => {
         >
           <div className="flex max-w-4xl flex-col items-center space-y-10 text-center text-black">
             <h1 className="font-display text-5xl lg:text-6xl">
-              What&apos;s your sustainable vision?
+              What&apos;s your sustainable vission?
             </h1>
             <h2 className="text-lg lg:text-xl">Let&apos;s paint it into a picture.</h2>
             <Button theme="primary" size="xl" onClick={() => setPlaying(true)}>

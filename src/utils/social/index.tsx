@@ -10,7 +10,7 @@ export const socialMediaShare = ({ social, url, caption }: UseSocialMediaShare) 
     return link;
   }
   if (social === 'linkedin') {
-    const link = `${LINKEDIN}?url=${url}&title=${caption}`;
+    const link = `${LINKEDIN}?url=${url}&summary=${caption}`;
     return link;
   }
 };
