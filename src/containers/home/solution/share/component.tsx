@@ -30,9 +30,9 @@ const ShareContent = () => {
         <a
           href={socialMediaShare({
             social: 'twitter',
-            url: `${process.env.NEXT_PUBLIC_BASE_PATH}${asPath}`,
+            url: `https://future-landscapes.vizzuality.com${asPath}`,
             caption:
-              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours turn out like? Find out at http://future-landscapes.vizzuality.com/',
+              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at http://bit.ly/3xXV3hu #FutureLandscapes #vizzuality',
           })}
           target="_blank"
           rel="noopener noreferrer"
@@ -44,9 +44,9 @@ const ShareContent = () => {
         <a
           href={socialMediaShare({
             social: 'linkedin',
-            url: `${process.env.NEXT_PUBLIC_BASE_PATH}${asPath}`,
+            url: `https://future-landscapes.vizzuality.com${asPath}`,
             caption:
-              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours turn out like? Find out at http://future-landscapes.vizzuality.com/',
+              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at http://bit.ly/3xXV3hu #FutureLandscapes #vizzuality',
           })}
           target="_blank"
           rel="noopener noreferrer"

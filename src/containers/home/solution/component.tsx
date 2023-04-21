@@ -124,11 +124,11 @@ const Solution = () => {
                 Your choices have created your variation of our shared future landscape.
               </p>
               <p>
-                Together, all these visions will help us shape a sustainable future and a better
+                Together, all these vissions will help us shape a sustainable future and a better
                 world.
               </p>
               <p>
-                Curious to see what your friends envision? Share your picture with them and find
+                Curious to see what your friends envission? Share your picture with them and find
                 out!
               </p>
             </div>
@@ -179,7 +179,7 @@ const Solution = () => {
                   Thank you for imagining with us. Now, how do we get to that better future?
                 </p>
                 <p>
-                  At <b>vizzuality</b>, we aim to turn vision into reality by working at the
+                  At <b>vizzuality</b>, we aim to turn vission into reality by working at the
                   intersection of digital and sustainable transformation.
                 </p>
                 <p>
@@ -265,7 +265,7 @@ const Solution = () => {
                   Thank you for imagining with us. Now, how do we get to that better future?
                 </p>
                 <p>
-                  At <b>vizzuality</b>, we aim to turn vision into reality by working at the
+                  At <b>vizzuality</b>, we aim to turn vission into reality by working at the
                   intersection of digital and sustainable transformation.
                 </p>
               </div>
