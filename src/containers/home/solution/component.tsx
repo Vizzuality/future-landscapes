@@ -67,21 +67,29 @@ const Solution = () => {
   return (
     <>
       <div className="flex flex-col items-center px-4 pt-4 lg:flex-row lg:justify-between">
-        <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.vizzuality.com" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-5 w-20 lg:h-6 lg:w-24" />
         </a>
         <Media greaterThanOrEqual="sm">
           <div className="flex space-x-11 lg:space-x-6">
-            <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.vizzuality.com" target="_blank" rel="noopener noreferrer">
               <Icon icon={WEB_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href="https://bit.ly/3fTtKQ5" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/Vizzuality" target="_blank" rel="noopener noreferrer">
               <Icon icon={TWITTER_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href="https://bit.ly/3UMCd6D" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/vizzuality"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon={INSTA_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href=" https://bit.ly/3Ux6h6A" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/vizzuality"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
           </div>

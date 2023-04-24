@@ -458,7 +458,7 @@ export const PROJECTS = [
     id: 'landgriffon',
     name: 'LandGriffon',
     image: '/images/projects/LandGriffon.png',
-    link: 'https://bit.ly/3JdXD7G',
+    link: 'https://landgriffon.com',
     description: (
       <p>
         Empowering companies to measure, manage, and{' '}
@@ -470,7 +470,7 @@ export const PROJECTS = [
     id: 'marxan',
     name: 'Marxan',
     image: '/images/projects/Marxan.png',
-    link: 'http://bit.ly/40RNZjU',
+    link: 'https://marxanplanning.org',
     description: (
       <p>
         Supporting <b>collaboration and decision-making for biodiversity conservation</b> and
@@ -482,7 +482,7 @@ export const PROJECTS = [
     id: 'climate-watch',
     name: 'Climate Watch',
     image: '/images/projects/Climate_Watch.png',
-    link: 'http://bit.ly/40Xr6f1',
+    link: 'https://www.climatewatchdata.org',
     description: (
       <p>
         Gathering <b>insights on national and global progress on climate change.</b>
@@ -493,7 +493,7 @@ export const PROJECTS = [
     id: 'global-forest-watch',
     name: 'Global Forest Watch',
     image: '/images/projects/global_forest_watch.png',
-    link: 'http://bit.ly/3YwbKfB',
+    link: 'https://www.globalforestwatch.org',
     description: (
       <p>
         Offering the latest data, technology and tools that empower people everywhere to{' '}
@@ -505,7 +505,7 @@ export const PROJECTS = [
     id: 'soils-revealed',
     name: 'Soils Revealed',
     image: '/images/projects/soils_revealed.png',
-    link: 'https://bit.ly/3F8Pa4b',
+    link: 'https://soilsrevealed.org',
     description: (
       <p>
         Visualizing how{' '}
@@ -517,7 +517,7 @@ export const PROJECTS = [
     id: 'global-mangrove-watch',
     name: 'Global Mangrove Watch',
     image: '/images/projects/global_mangrove_watch.png',
-    link: 'https://bit.ly/3PS5ZV1',
+    link: 'https://www.globalmangrovewatch.org',
     description: (
       <p>
         Monitoring near real time change to catalyse the action needed to{' '}
@@ -529,7 +529,7 @@ export const PROJECTS = [
     id: 'coclico',
     name: 'CoCliCo',
     image: '/images/projects/CoCliCo.png',
-    link: 'http://bit.ly/3lBXljn',
+    link: 'https://coclicoservices.eu',
     description: (
       <p>
         Improving{' '}
@@ -541,7 +541,7 @@ export const PROJECTS = [
     id: 'ocean-watch',
     name: 'Ocean Watch',
     image: '/images/projects/ocean_watch.png',
-    link: 'http://bit.ly/3jX3p5L',
+    link: 'https://resourcewatch.org/dashboards/ocean-watch',
     description: (
       <p>
         Providing trusted data for <b>sustainable ocean management and development.</b>
@@ -552,7 +552,7 @@ export const PROJECTS = [
     id: 'half-earth',
     name: 'Half-Earth',
     image: '/images/projects/half_earth.png',
-    link: 'http://bit.ly/3YG4q0O',
+    link: 'https://www.half-earthproject.org',
     description: (
       <p>
         Reimaging{' '}
@@ -567,7 +567,7 @@ export const PROJECTS = [
     id: 'trase',
     name: 'Trase',
     image: '/images/projects/Trase.png',
-    link: 'https://bit.ly/3sAqQ5z',
+    link: 'https://www.trase.earth',
     description: (
       <p>
         Providing a unique <b>supply chain</b> mapping approach that revolutionises our
@@ -579,7 +579,7 @@ export const PROJECTS = [
     id: 'aqueduct-water-risk-atlas',
     name: 'Aqueduct Water Risk Atlas',
     image: '/images/projects/aqueduct_water_risk_atlas.png',
-    link: 'http://bit.ly/3jPFV2B',
+    link: 'https://www.wri.org/aqueduct',
     description: (
       <p>
         Using cutting-edge data to identify and <b>evaluate water risks around the world,</b> such
@@ -591,7 +591,7 @@ export const PROJECTS = [
     id: 'restor',
     name: 'Restor',
     image: '/images/projects/Restor.png',
-    link: 'http://bit.ly/3E5SxJA',
+    link: 'https://restor.eco',
     description: (
       <p>
         Connecting people and projects to scientific data, monitoring tools, funding, and each other
@@ -603,7 +603,7 @@ export const PROJECTS = [
     id: 'iisd-sdg-hub',
     name: 'IISD SDG Hub',
     image: '/images/projects/iisd_sdg_hub.png',
-    link: 'http://bit.ly/3RZqPnt',
+    link: 'http://sdg.iisd.org',
     description: (
       <p>
         A hub for <b>news and resources on all 17 Sustainable Development Goals (SDGs).</b>
@@ -614,7 +614,7 @@ export const PROJECTS = [
     id: 'climate-change-laws-of-the-world',
     name: 'Climate Change Laws of the World',
     image: '/images/projects/climate_change_laws_of_the_world.png',
-    link: 'http://bit.ly/3YAqZnV',
+    link: 'https://climate-laws.org',
     description: (
       <p>
         Covering <b>national-level climate change legislation and policies globally</b>, including
@@ -626,7 +626,7 @@ export const PROJECTS = [
     id: 'refed',
     name: 'ReFED',
     image: '/images/projects/ReFED.png',
-    link: 'http://bit.ly/3YwcT6T',
+    link: 'https://refed.org',
     description: (
       <p>
         Advancing <b>data-driven solutions to fight food waste.</b> ReFED is working across the food
@@ -638,7 +638,7 @@ export const PROJECTS = [
     id: 'resource-watch',
     name: 'Resource Watch',
     image: '/images/projects/resource_watch.png',
-    link: 'http://bit.ly/40WZNRK',
+    link: 'https://resourcewatch.org',
     description: (
       <p>
         Bringing together hundreds of the most trusted and timely{' '}
@@ -650,7 +650,7 @@ export const PROJECTS = [
     id: 'global-fishing-watch',
     name: 'Global Fishing Watch',
     image: '/images/projects/global_fishing_watch.png',
-    link: 'http://bit.ly/3YMjb27',
+    link: 'https://globalfishingwatch.org',
     description: (
       <p>
         Making <b>fishing activity transparent</b> to enable fair and sustainable use of our ocean.
@@ -661,7 +661,7 @@ export const PROJECTS = [
     id: 'mongabay-reforestation-app',
     name: 'Mongabay Reforestation App',
     image: '/images/projects/mongabay_reforestation_app.png',
-    link: 'http://bit.ly/3RZWfu7',
+    link: 'https://reforestation.app',
     description: (
       <p>
         A <b>global directory of tree-planting projects</b>, improving transparency in the sector
@@ -673,7 +673,7 @@ export const PROJECTS = [
     id: 'forest-forward',
     name: 'Forest Forward',
     image: '/images/projects/forest_forward.png',
-    link: 'http://bit.ly/3HVYM3X',
+    link: 'https://forest-forward.com',
     description: (
       <p>
         Forest Forward identifies <b>future suitable areas for forestry</b>, combining species
@@ -685,7 +685,7 @@ export const PROJECTS = [
     id: 'sdg16',
     name: 'SDG16',
     image: '/images/projects/SDG16.png',
-    link: 'http://bit.ly/3E6iOra',
+    link: 'https://www.sdg16.org',
     description: (
       <p>
         Tracking progress towards the achievement of{' '}
@@ -697,7 +697,7 @@ export const PROJECTS = [
     id: 'wildlife-insights',
     name: 'Wildlife Insights',
     image: '/images/projects/wildlife_insights.png',
-    link: 'http://bit.ly/3KbQ9VL',
+    link: 'https://www.wildlifeinsights.org',
     description: (
       <p>
         Streamlining conservation decision-making by providing machine learning models and other
@@ -709,7 +709,7 @@ export const PROJECTS = [
     id: 'resilience-atlas',
     name: 'Resilience Atlas',
     image: '/images/projects/resilience_atlas.png',
-    link: 'http://bit.ly/3k3Kfem',
+    link: 'https://www.resilienceatlas.org',
     description: (
       <p>
         Understanding key stressors, shocks and insights into the ways that different types of
