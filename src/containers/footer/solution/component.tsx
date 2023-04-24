@@ -12,7 +12,7 @@ const Solution = () => {
     <div className="flex w-full flex-col items-center space-y-8 lg:flex-row lg:justify-center lg:space-y-0">
       <Media greaterThanOrEqual="sm" className="flex items-center text-white">
         <p className="text-base">Future Landscapes by:</p>
-        <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.vizzuality.com" target="_blank" rel="noopener noreferrer">
           <Icon icon={VIZZ_SVG} className="h-4 w-20" />
         </a>
       </Media>
@@ -20,22 +20,30 @@ const Solution = () => {
       <Media lessThan="sm">
         <div className="flex flex-col items-center space-y-6 text-black">
           <div className="flex space-x-11 lg:space-x-6">
-            <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.vizzuality.com" target="_blank" rel="noopener noreferrer">
               <Icon icon={WEB_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href="https://bit.ly/3fTtKQ5" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/Vizzuality" target="_blank" rel="noopener noreferrer">
               <Icon icon={TWITTER_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href="https://bit.ly/3UMCd6D" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/vizzuality"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon={INSTA_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
-            <a href=" https://bit.ly/3Ux6h6A" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/vizzuality"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon={LINKEDIN_SVG} className="h-8 w-8 text-black lg:h-6 lg:w-6" />
             </a>
           </div>
           <div className="flex items-center">
             <p>Future Landscapes by:</p>
-            <a href="https://bit.ly/3G4DJZL" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.vizzuality.com" target="_blank" rel="noopener noreferrer">
               <Icon icon={VIZZ_SVG} className="h-4 w-20 lg:h-7 lg:w-32" />
             </a>
           </div>

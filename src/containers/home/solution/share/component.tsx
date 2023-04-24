@@ -46,7 +46,7 @@ const ShareContent = () => {
             social: 'twitter',
             url: `https://future-landscapes.vizzuality.com${asPath}`,
             caption:
-              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at http://bit.ly/3xXV3hu #FutureLandscapes #vizzuality',
+              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at https://future-landscapes.vizzuality.com #FutureLandscapes #vizzuality',
           })}
           target="_blank"
           rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const ShareContent = () => {
             social: 'linkedin',
             url: `https://future-landscapes.vizzuality.com${asPath}`,
             caption:
-              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at http://bit.ly/3xXV3hu #FutureLandscapes #vizzuality',
+              'I took a sustainability mini quiz by @Vizzuality and found out my Future Landscape looks like this! What does yours look like? Find out at https://future-landscapes.vizzuality.com #FutureLandscapes #vizzuality',
           })}
           target="_blank"
           rel="noopener noreferrer"
