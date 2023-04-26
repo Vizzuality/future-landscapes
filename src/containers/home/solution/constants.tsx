@@ -297,7 +297,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
@@ -325,7 +325,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we utilise the power of technology to <b>adapt</b> to a new
           reality.
         </p>
@@ -353,7 +353,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
@@ -381,7 +381,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
@@ -410,7 +410,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
@@ -438,7 +438,7 @@ export const SOLUTIONS = [
     content: (
       <>
         <p className="text-lg font-normal lg:text-base">
-          We can create a more sustainable future by taking steps to implement practical{''}
+          We can create a more sustainable future by taking steps to implement practical{' '}
           <b>actions</b>. A future where we <b>prevent</b> severe climate and ecological breakdown
           by working with the earth rather than against her.
         </p>
