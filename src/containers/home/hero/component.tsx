@@ -26,9 +26,11 @@ const Hero = () => {
           exit={{
             opacity: 0,
             y: '100%',
-            transition: {
-              delay: 0.3,
-            },
+          }}
+          transition={{
+            duration: 0.5,
+            ease: 'backOut',
+            delay: 0.75,
           }}
         >
           <div className="flex max-w-4xl flex-col items-center space-y-10 text-center text-black">

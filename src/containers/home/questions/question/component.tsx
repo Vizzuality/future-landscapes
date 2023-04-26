@@ -46,7 +46,7 @@ const Question = forwardRef<HTMLDivElement, QuestionProps>(({ id }, ref) => {
 
   return (
     <div key={id} ref={ref}>
-      <div className="grid h-screen w-screen grid-cols-12 justify-items-center gap-4 overflow-hidden p-4 lg:content-center lg:gap-4">
+      <div className="grid h-screen w-screen grid-cols-12 justify-items-center gap-4 overflow-auto p-4 lg:content-center lg:gap-4 lg:overflow-hidden">
         <div className="col-span-12 max-w-lg space-y-4 lg:col-span-4 lg:col-start-3">
           <div>
             <p className="text-xl font-semibold">

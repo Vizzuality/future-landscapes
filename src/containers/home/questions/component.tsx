@@ -84,7 +84,7 @@ const Questions = () => {
                     animate="center"
                     exit="exit"
                     transition={{
-                      duration: 0.5,
+                      duration: 1,
                       ease: 'anticipate',
                     }}
                     key={q.id}
